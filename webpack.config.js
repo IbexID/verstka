@@ -1,11 +1,13 @@
 const path = require('path')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const webpack = require('webpack')
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+
 
 module.exports = {
     mode: 'development',
     entry: {
-        app: './src/index.js',
+        legalide: './src/legalide.js',
     },
     output: {
         path: path.resolve(__dirname, './dist'),
@@ -15,7 +17,7 @@ module.exports = {
         rules: [
             {
                 test: /\.s[ac]ss$/i,
-                use: ['style-loader', 'css-loader', 'sass-loader'],
+                use: [MiniCssExtractPlugin.loader, 'css-loader', 'sass-loader'],
             },
             {
                 test: /\.(woff(2)?|eot|ttf|otf|svg|)$/,
@@ -32,10 +34,13 @@ module.exports = {
     },
     plugins: [
         new HtmlWebpackPlugin({
-            title: 'main page',
-            template: path.resolve(__dirname, './src/index.html'), // шаблон
-            filename: 'index.html', // название выходного файла
+            title: '[name]',
+            template: path.resolve(__dirname, './src/legalide.html'),
+            filename: '[name].html', 
         }),
         new webpack.HotModuleReplacementPlugin(),
+        new MiniCssExtractPlugin({
+            filename: "styles/[name].css",
+          }),
     ],
 }
