@@ -12,6 +12,14 @@ $brown-color: #784F33;
     letter-spacing: .2px;
 }
 
+@mixin h2-text{
+    font-family: 'Martel', serif;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 50px;
+    letter-spacing: 0.2px
+}
+
 @mixin h3-text {
 
     font-family: 'Martin', serif;
@@ -51,6 +59,14 @@ $brown-color: #784F33;
     font-weight: 600;
     font-size: 14px;
     line-height: 24px;
+    letter-spacing: 0.2px;
+    color: $second-text-color;
+}
+@mixin ordinary-text{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
     letter-spacing: 0.2px;
     color: $second-text-color;
 }
@@ -240,6 +256,7 @@ a {
     }
     &__consult-button{
         margin-right: 39px;
+        cursor: pointer;
     }
     &__sitemap{
         background: linear-gradient(270deg, #295C7A -1.04%, #0072B5 100%);
@@ -303,5 +320,68 @@ a {
         justify-content: space-between;
         align-items: center;
         width: 236px;
+    }
+}
+@media (min-width: 1450px){
+    .footer__sitemap-menu{
+    justify-content: space-between;
+    }
+}
+
+.areas{
+    padding: 100px 199px 102px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &__title{
+        @include h2-text();
+        margin-bottom: 10px;
+    }
+    &__text{
+        @include ordinary-text();
+        margin-bottom: 80px;
+        text-align: center;
+    }
+    &__cards{
+        display: flex;
+
+    }
+    &__card{
+        cursor: pointer;
+        width: 328px;
+        height: 147px;
+        background: rgba(249, 249, 249, 1);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0px 13px 19px 0px rgba(0,0,0,0.12);
+        margin-right: 30px;
+        border-radius: 5px;
+        &:hover{
+            transform: scale(1.1);
+            transition: all 0.3s ease;
+        }
+    }
+    &__card-title{
+        @include h5-text();
+        color: $text-color;
+    }
+    &__card-image{
+        margin-bottom: 15px;
+    }
+    &__card--active{
+        box-shadow: none;
+        background: #295C7A;
+        &:hover{
+            transform: none;
+
+        }
+        .areas__card-title{
+            color: white;
+        }
+        .areas__card-image{
+            margin-bottom: 10px;
+        }
     }
 }
