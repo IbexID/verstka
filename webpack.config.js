@@ -10,8 +10,14 @@ module.exports = {
         legalide: './src/legalide.js',
     },
     output: {
+        
         path: path.resolve(__dirname, './dist'),
         filename: '[name].js',
+        clean: true,
+        assetModuleFilename: pathData => {
+            const filepath = path.dirname(pathData.filename).split('/').slice(1).join('/');
+            return `${filepath}/[name][ext]`;
+        },
     },
     module: {
         rules: [
@@ -27,9 +33,9 @@ module.exports = {
             {
                 test: /\.(?:ico|gif|png|jpg|jpeg)$/i,
                 type: 'asset/resource',
-                generator: {
+                /* generator: {
                     filename: 'images/[name][ext]'
-                }
+                } */
             },
         ]
     },
