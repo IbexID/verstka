@@ -36,7 +36,7 @@ eval("\n\n/* eslint-disable */\n\n/**\n * @param {string[]} pathComponents\n * @
   \***************************/
 /***/ ((module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n    if(true) {\n      // 1656352614903\n      var cssReload = __webpack_require__(/*! ../node_modules/mini-css-extract-plugin/dist/hmr/hotModuleReplacement.js */ \"./node_modules/mini-css-extract-plugin/dist/hmr/hotModuleReplacement.js\")(module.id, {\"locals\":false});\n      module.hot.dispose(cssReload);\n      module.hot.accept(undefined, cssReload);\n    }\n  \n\n//# sourceURL=webpack:///./src/legalide.scss?");
+eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n    if(true) {\n      // 1656358759278\n      var cssReload = __webpack_require__(/*! ../node_modules/mini-css-extract-plugin/dist/hmr/hotModuleReplacement.js */ \"./node_modules/mini-css-extract-plugin/dist/hmr/hotModuleReplacement.js\")(module.id, {\"locals\":false});\n      module.hot.dispose(cssReload);\n      module.hot.accept(undefined, cssReload);\n    }\n  \n\n//# sourceURL=webpack:///./src/legalide.scss?");
 
 /***/ }),
 
@@ -46,7 +46,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extr
   \*************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _legalide_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./legalide.scss */ \"./src/legalide.scss\");\n/* harmony import */ var _images_icons_fb_icon_png__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./images/icons/fb-icon.png */ \"./src/images/icons/fb-icon.png\");\n/* harmony import */ var _images_icons_areas_icon_1_png__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./images/icons/areas-icon-1.png */ \"./src/images/icons/areas-icon-1.png\");\n/* harmony import */ var _images_icons_areas_icon_2_png__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./images/icons/areas-icon-2.png */ \"./src/images/icons/areas-icon-2.png\");\n/* harmony import */ var _images_icons_areas_icon_3_png__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./images/icons/areas-icon-3.png */ \"./src/images/icons/areas-icon-3.png\");\n/* harmony import */ var _images_icons_cart_icon_png__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./images/icons/cart-icon.png */ \"./src/images/icons/cart-icon.png\");\n/* harmony import */ var _images_icons_ig_icon_png__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./images/icons/ig-icon.png */ \"./src/images/icons/ig-icon.png\");\n/* harmony import */ var _images_icons_phone_icon_png__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./images/icons/phone-icon.png */ \"./src/images/icons/phone-icon.png\");\n/* harmony import */ var _images_icons_pin_icon_png__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./images/icons/pin-icon.png */ \"./src/images/icons/pin-icon.png\");\n/* harmony import */ var _images_icons_search_icon_png__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./images/icons/search-icon.png */ \"./src/images/icons/search-icon.png\");\n/* harmony import */ var _images_icons_send_icon_png__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./images/icons/send-icon.png */ \"./src/images/icons/send-icon.png\");\n/* harmony import */ var _images_icons_twitter_icon_png__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./images/icons/twitter-icon.png */ \"./src/images/icons/twitter-icon.png\");\n/* harmony import */ var _images_icons_youtube_icon_png__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./images/icons/youtube-icon.png */ \"./src/images/icons/youtube-icon.png\");\n/* harmony import */ var _images_advice_card_1_png__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./images/advice-card-1.png */ \"./src/images/advice-card-1.png\");\n/* harmony import */ var _images_advice_card_2_png__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./images/advice-card-2.png */ \"./src/images/advice-card-2.png\");\n/* harmony import */ var _images_advice_card_3_png__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./images/advice-card-3.png */ \"./src/images/advice-card-3.png\");\n/* harmony import */ var _images_advice_card_4_png__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./images/advice-card-4.png */ \"./src/images/advice-card-4.png\");\n/* harmony import */ var _images_about_bg_jpg__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./images/about-bg.jpg */ \"./src/images/about-bg.jpg\");\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\n\n//# sourceURL=webpack:///./src/legalide.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _legalide_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./legalide.scss */ \"./src/legalide.scss\");\n/* harmony import */ var _images_icons_fb_icon_png__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./images/icons/fb-icon.png */ \"./src/images/icons/fb-icon.png\");\n/* harmony import */ var _images_icons_areas_icon_1_png__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./images/icons/areas-icon-1.png */ \"./src/images/icons/areas-icon-1.png\");\n/* harmony import */ var _images_icons_areas_icon_2_png__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./images/icons/areas-icon-2.png */ \"./src/images/icons/areas-icon-2.png\");\n/* harmony import */ var _images_icons_areas_icon_3_png__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./images/icons/areas-icon-3.png */ \"./src/images/icons/areas-icon-3.png\");\n/* harmony import */ var _images_icons_cart_icon_png__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./images/icons/cart-icon.png */ \"./src/images/icons/cart-icon.png\");\n/* harmony import */ var _images_icons_ig_icon_png__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./images/icons/ig-icon.png */ \"./src/images/icons/ig-icon.png\");\n/* harmony import */ var _images_icons_phone_icon_png__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./images/icons/phone-icon.png */ \"./src/images/icons/phone-icon.png\");\n/* harmony import */ var _images_icons_pin_icon_png__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./images/icons/pin-icon.png */ \"./src/images/icons/pin-icon.png\");\n/* harmony import */ var _images_icons_search_icon_png__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./images/icons/search-icon.png */ \"./src/images/icons/search-icon.png\");\n/* harmony import */ var _images_icons_send_icon_png__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./images/icons/send-icon.png */ \"./src/images/icons/send-icon.png\");\n/* harmony import */ var _images_icons_twitter_icon_png__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./images/icons/twitter-icon.png */ \"./src/images/icons/twitter-icon.png\");\n/* harmony import */ var _images_icons_youtube_icon_png__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./images/icons/youtube-icon.png */ \"./src/images/icons/youtube-icon.png\");\n/* harmony import */ var _images_advice_card_1_png__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./images/advice-card-1.png */ \"./src/images/advice-card-1.png\");\n/* harmony import */ var _images_advice_card_2_png__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./images/advice-card-2.png */ \"./src/images/advice-card-2.png\");\n/* harmony import */ var _images_advice_card_3_png__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./images/advice-card-3.png */ \"./src/images/advice-card-3.png\");\n/* harmony import */ var _images_advice_card_4_png__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./images/advice-card-4.png */ \"./src/images/advice-card-4.png\");\n/* harmony import */ var _images_about_bg_jpg__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./images/about-bg.jpg */ \"./src/images/about-bg.jpg\");\n/* harmony import */ var _images_clients_logo_1_png__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ./images/clients-logo-1.png */ \"./src/images/clients-logo-1.png\");\n/* harmony import */ var _images_clients_logo_2_png__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ./images/clients-logo-2.png */ \"./src/images/clients-logo-2.png\");\n/* harmony import */ var _images_clients_logo_3_png__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ./images/clients-logo-3.png */ \"./src/images/clients-logo-3.png\");\n/* harmony import */ var _images_clients_logo_4_png__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! ./images/clients-logo-4.png */ \"./src/images/clients-logo-4.png\");\n/* harmony import */ var _images_clients_logo_5_png__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! ./images/clients-logo-5.png */ \"./src/images/clients-logo-5.png\");\n/* harmony import */ var _images_clients_logo_6_png__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! ./images/clients-logo-6.png */ \"./src/images/clients-logo-6.png\");\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\n\n//# sourceURL=webpack:///./src/legalide.js?");
 
 /***/ }),
 
@@ -97,6 +97,66 @@ eval("module.exports = __webpack_require__.p + \"images/advice-card-3.png\";\n\n
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 eval("module.exports = __webpack_require__.p + \"images/advice-card-4.png\";\n\n//# sourceURL=webpack:///./src/images/advice-card-4.png?");
+
+/***/ }),
+
+/***/ "./src/images/clients-logo-1.png":
+/*!***************************************!*\
+  !*** ./src/images/clients-logo-1.png ***!
+  \***************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"images/clients-logo-1.png\";\n\n//# sourceURL=webpack:///./src/images/clients-logo-1.png?");
+
+/***/ }),
+
+/***/ "./src/images/clients-logo-2.png":
+/*!***************************************!*\
+  !*** ./src/images/clients-logo-2.png ***!
+  \***************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"images/clients-logo-2.png\";\n\n//# sourceURL=webpack:///./src/images/clients-logo-2.png?");
+
+/***/ }),
+
+/***/ "./src/images/clients-logo-3.png":
+/*!***************************************!*\
+  !*** ./src/images/clients-logo-3.png ***!
+  \***************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"images/clients-logo-3.png\";\n\n//# sourceURL=webpack:///./src/images/clients-logo-3.png?");
+
+/***/ }),
+
+/***/ "./src/images/clients-logo-4.png":
+/*!***************************************!*\
+  !*** ./src/images/clients-logo-4.png ***!
+  \***************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"images/clients-logo-4.png\";\n\n//# sourceURL=webpack:///./src/images/clients-logo-4.png?");
+
+/***/ }),
+
+/***/ "./src/images/clients-logo-5.png":
+/*!***************************************!*\
+  !*** ./src/images/clients-logo-5.png ***!
+  \***************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"images/clients-logo-5.png\";\n\n//# sourceURL=webpack:///./src/images/clients-logo-5.png?");
+
+/***/ }),
+
+/***/ "./src/images/clients-logo-6.png":
+/*!***************************************!*\
+  !*** ./src/images/clients-logo-6.png ***!
+  \***************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"images/clients-logo-6.png\";\n\n//# sourceURL=webpack:///./src/images/clients-logo-6.png?");
 
 /***/ }),
 
@@ -290,7 +350,7 @@ eval("module.exports = __webpack_require__.p + \"images/icons/youtube-icon.png\"
 /******/ 	
 /******/ 	/* webpack/runtime/getFullHash */
 /******/ 	(() => {
-/******/ 		__webpack_require__.h = () => ("d71f291ab9dc3ecbb293")
+/******/ 		__webpack_require__.h = () => ("8c647c07c3c6c23cdbfd")
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/global */
