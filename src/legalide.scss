@@ -1,9 +1,10 @@
-@import url('./normalize.scss');
+//@import url('./normalize.scss');
 //@import url('./fonts.scss');
 $text-color: #252B42;
 $second-text-color: #737373;
 $brown-color: #784F33;
-@mixin h1-text{
+
+@mixin h1-text {
     font-family: "Martel", serif;
     font-weight: 900;
     font-size: 58px;
@@ -14,12 +15,13 @@ $brown-color: #784F33;
 @mixin h3-text {
 
     font-family: 'Martin', serif;
-    font-weight: 700;
-    font-size: 24px;
+    font-weight: 700 ;
+    font-size: 26px;
     line-height: 32px;
     color: $text-color;
-    letter-spacing: 0.1px;
+    letter-spacing: 1px;
 }
+
 @mixin h4-text {
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
@@ -27,7 +29,23 @@ $brown-color: #784F33;
     line-height: 30px;
     letter-spacing: .2px;
 }
+@mixin h5-text{
+    font-family: 'Martel', serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.1px;
+    color: white;
+}
 
+@mixin h6-text {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+    color:white;
+}
 @mixin second-text {
     font-family: 'Open Sans', sans-serif;
     font-weight: 600;
@@ -36,7 +54,8 @@ $brown-color: #784F33;
     letter-spacing: 0.2px;
     color: $second-text-color;
 }
-@mixin button-text{
+
+@mixin button-text {
     font-family: 'Open Sans', sans-serif;
     font-size: 14px;
     line-height: 28px;
@@ -69,6 +88,8 @@ a {
     }
 
     &__nav-logo {
+        padding-left: 136px;
+        margin-bottom: 2px;
         @include h3-text;
     }
 
@@ -83,16 +104,20 @@ a {
         display: flex;
         justify-content: space-between;
         @include second-text;
-        margin-right: 42px;
+        margin-right: 55px;
+        width: 240px;
     }
 
     &__nav-link:not(:nth-of-type(-1)) {
-        margin-right: 22px;
+        margin-right: 26px;
     }
-    &__nav-icon{
+
+    &__nav-icon {
         cursor: pointer;
-        margin-right: 22px;
+        margin-left: 21px;
+        
     }
+
     &__nav-burger {
         cursor: pointer;
         align-self: flex-start;
@@ -101,35 +126,42 @@ a {
         margin-left: 140px;
     }
 
-    
-    &__container{
+
+    &__container {
         padding: 0 196px;
         min-height: 681px;
         background-image: url('./images/header-content-bg.png');
         background-repeat: no-repeat;
         background-position: right 170px bottom;
     }
-    &__content{
+
+    &__content {
         padding-top: 154px;
     }
-    &__title{
+
+    &__title {
         @include h1-text;
         margin-bottom: 35px;
     }
-    &__subtitle{
+
+    &__subtitle {
         @include h4-text;
         margin-bottom: 35px;
     }
-    &__buttons{
+
+    &__buttons {
         display: flex;
         align-items: center;
     }
-    &__button:first-child{
+
+    &__button:first-child {
         margin-right: 10px;
     }
 }
 
 .burger-menu {
+    margin-top: 5px !important;
+    margin-left: 1px !important;
     height: 2px;
     width: 24px;
     margin-top: 4px;
@@ -145,6 +177,7 @@ a {
         top: 6px;
         right: 0;
     }
+
     &::after {
         position: absolute;
         content: '';
@@ -156,7 +189,7 @@ a {
     }
 }
 
-.button{
+.button {
     max-height: 48px;
     width: fit-content;
     padding: 10px 36px;
@@ -164,12 +197,111 @@ a {
     border: none;
     @include button-text;
     cursor: pointer;
-    &--filled{
+
+    &--filled {
         color: white;
         background-color: $brown-color;
     }
-    &--trans{
+
+    &--trans {
+        background-color: transparent;
         color: $brown-color;
         border: 1px solid $brown-color;
+    }
+
+    &--square {
+
+        @include button-text;
+        border: none;
+        border-radius: 5px;
+        padding: 17px 40px;
+    }
+}
+
+.footer {
+    &__container {
+        padding: 0 195px;
+    }
+
+    &__consult {
+        display: flex;
+        justify-content: space-between;
+        padding: 42px 107px 42px 0;
+    }
+
+    &__consult-title{
+        @include h3-text;
+        margin-bottom: 10px;
+    }
+    &__consult-text{
+        @include second-text();
+        font-weight: 400;
+        line-height: 20px;
+    }
+    &__consult-button{
+        margin-right: 39px;
+    }
+    &__sitemap{
+        background: linear-gradient(270deg, #295C7A -1.04%, #0072B5 100%);
+        padding: 50px 195px 42px;
+    }
+    &__sitemap-menu{
+        display: flex;
+        
+    }
+    &__menu-list{
+        margin-right: 30px;
+        &:nth-of-type(2n+1){
+        min-width: 148px;
+        }
+        &:nth-of-type(2n){
+            min-width: 152px;
+        }
+    }
+    &__menu-title{
+        @include h5-text();
+        margin-bottom: 19px;
+    }
+    &__cred-title{
+        @include h5-text();
+        margin-bottom: 17px;
+    }
+    &__menu-item{
+        @include h6-text();
+        margin-bottom: 10px;
+    }
+    &__credentials{
+        
+        margin-left: 2px;
+    }
+    &__cred-item{
+        @include h6-text();
+        line-height: 30px;
+        font-weight: 700;
+        display: flex;
+        margin-bottom: 9px;
+        overflow: hidden;
+    }
+    &__cred-icon{
+        margin-right: 10px;
+    }
+    &__copyright {
+        display: flex;
+        justify-content: space-between;
+        height: 74px;
+        align-items: center
+    }
+
+    &__copyright-text {
+        @include second-text;
+        font-weight: 700;
+    }
+
+    &__copyright-social {
+        padding: 0 40px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 236px;
     }
 }
