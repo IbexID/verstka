@@ -22,10 +22,14 @@ module.exports = {
             {
                 test: /\.(woff(2)?|eot|ttf|otf|svg|)$/,
                 type: 'asset/inline',
+                
             },
             {
                 test: /\.(?:ico|gif|png|jpg|jpeg)$/i,
                 type: 'asset/resource',
+                generator: {
+                    filename: 'images/[name][ext]'
+                }
             },
         ]
     },
