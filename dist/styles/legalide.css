@@ -13,6 +13,10 @@ a {
   color: inherit;
 }
 
+img {
+  display: block;
+}
+
 .header {
   background-image: url(../images/header-bg.png);
 }
@@ -421,4 +425,121 @@ a {
 }
 .advice__card-image {
   width: 100%;
+}
+
+.about {
+  padding: 100px 0 43px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.about__title {
+  font-family: "Martel", serif;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 50px;
+  letter-spacing: 0.2px;
+  margin-bottom: 15px;
+}
+.about__subtext {
+  margin-bottom: 100px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.2px;
+  color: #737373;
+  max-width: 468px;
+}
+.about__content {
+  display: flex;
+  justify-content: space-between;
+}
+.about__image {
+  margin-right: 121px;
+  position: relative;
+}
+.about__image::before {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 98px;
+  height: 98px;
+  content: "";
+  background-image: url(../images/icons/about-play-button.png);
+  cursor: pointer;
+  z-index: 2;
+}
+.about__image-filter {
+  position: absolute;
+  width: 598px;
+  height: 442px;
+  top: 0;
+  left: 0;
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(56, 56, 56, 0.84));
+}
+.about__info {
+  max-width: 321px;
+}
+.about__info-title {
+  margin-top: 20px;
+  font-family: "Martel", serif;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 50px;
+  letter-spacing: 0.2px;
+  margin-bottom: 10px;
+}
+.about__info-text {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+  color: #737373;
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+  padding-right: 15px;
+}
+.about__info-item {
+  font-family: "Martel", serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.1px;
+  color: white;
+  color: #252B42;
+  margin-bottom: 30px;
+  margin-left: 52px;
+  position: relative;
+}
+.about__info-item:first-of-type::after {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  content: "";
+  left: -52px;
+  top: 0;
+  background-image: url(../images/icons/about-icon-1.png);
+}
+.about__info-item:last-of-type::after {
+  position: absolute;
+  width: 33px;
+  height: 30px;
+  content: "";
+  left: -52px;
+  top: 0;
+  background-image: url(../images/icons/about-icon-2.png);
+}
+.about__item-text {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+  color: white;
+  font-weight: 700;
+  color: #737373;
+  margin-top: 5px;
 }
