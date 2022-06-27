@@ -349,3 +349,76 @@ a {
 .areas__card--active .areas__card-image {
   margin-bottom: 10px;
 }
+
+.advice {
+  background-color: #FAFAFA;
+  padding: 80px 195px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.advice__title {
+  font-family: "Martel", serif;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 50px;
+  letter-spacing: 0.2px;
+  margin-bottom: 10px;
+  padding-top: 45px;
+}
+.advice__text {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.2px;
+  color: #737373;
+  margin-bottom: 80px;
+  text-align: center;
+  margin-bottom: 45px;
+}
+.advice__cards {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.advice__card {
+  cursor: pointer;
+  width: 238px;
+  height: 317px;
+  background: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 30px;
+  border-radius: 5px;
+}
+.advice__card:hover {
+  transform: scale(1.1);
+  transition: all 0.3s ease;
+}
+.advice__card-content {
+  padding: 30px;
+}
+.advice__card-title {
+  font-family: "Martel", serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.1px;
+  color: white;
+  color: #252B42;
+  margin-bottom: 15px;
+}
+.advice__card-text {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.2px;
+  color: #737373;
+}
+.advice__card-image {
+  width: 100%;
+}

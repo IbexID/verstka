@@ -12,7 +12,7 @@ $brown-color: #784F33;
     letter-spacing: .2px;
 }
 
-@mixin h2-text{
+@mixin h2-text {
     font-family: 'Martel', serif;
     font-weight: 700;
     font-size: 40px;
@@ -23,7 +23,7 @@ $brown-color: #784F33;
 @mixin h3-text {
 
     font-family: 'Martin', serif;
-    font-weight: 700 ;
+    font-weight: 700;
     font-size: 26px;
     line-height: 32px;
     color: $text-color;
@@ -37,7 +37,8 @@ $brown-color: #784F33;
     line-height: 30px;
     letter-spacing: .2px;
 }
-@mixin h5-text{
+
+@mixin h5-text {
     font-family: 'Martel', serif;
     font-weight: 700;
     font-size: 16px;
@@ -52,8 +53,9 @@ $brown-color: #784F33;
     font-size: 14px;
     line-height: 24px;
     letter-spacing: 0.2px;
-    color:white;
+    color: white;
 }
+
 @mixin second-text {
     font-family: 'Open Sans', sans-serif;
     font-weight: 600;
@@ -62,7 +64,8 @@ $brown-color: #784F33;
     letter-spacing: 0.2px;
     color: $second-text-color;
 }
-@mixin ordinary-text{
+
+@mixin ordinary-text {
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
     font-size: 14px;
@@ -131,7 +134,7 @@ a {
     &__nav-icon {
         cursor: pointer;
         margin-left: 21px;
-        
+
     }
 
     &__nav-burger {
@@ -245,53 +248,65 @@ a {
         padding: 42px 107px 42px 0;
     }
 
-    &__consult-title{
+    &__consult-title {
         @include h3-text;
         margin-bottom: 10px;
     }
-    &__consult-text{
+
+    &__consult-text {
         @include second-text();
         font-weight: 400;
         line-height: 20px;
     }
-    &__consult-button{
+
+    &__consult-button {
         margin-right: 39px;
         cursor: pointer;
     }
-    &__sitemap{
+
+    &__sitemap {
         background: linear-gradient(270deg, #295C7A -1.04%, #0072B5 100%);
         padding: 50px 195px 42px;
     }
-    &__sitemap-menu{
+
+    &__sitemap-menu {
         display: flex;
-        
+
     }
-    &__menu-list{
+
+    &__menu-list {
         margin-right: 30px;
-        &:nth-of-type(2n+1){
-        min-width: 148px;
+
+        &:nth-of-type(2n+1) {
+            min-width: 148px;
         }
-        &:nth-of-type(2n){
+
+        &:nth-of-type(2n) {
             min-width: 152px;
         }
     }
-    &__menu-title{
+
+    &__menu-title {
         @include h5-text();
         margin-bottom: 19px;
     }
-    &__cred-title{
+
+    &__cred-title {
         @include h5-text();
         margin-bottom: 17px;
     }
-    &__menu-item{
+
+    &__menu-item {
         @include h6-text();
         margin-bottom: 10px;
     }
-    &__credentials{
-        
+
+    &__credentials {
+
         margin-left: 2px;
     }
-    &__cred-item{
+
+    &__cred-item {
         @include h6-text();
         line-height: 30px;
         font-weight: 700;
@@ -299,9 +314,11 @@ a {
         margin-bottom: 9px;
         overflow: hidden;
     }
-    &__cred-icon{
+
+    &__cred-icon {
         margin-right: 10px;
     }
+
     &__copyright {
         display: flex;
         justify-content: space-between;
@@ -322,31 +339,36 @@ a {
         width: 236px;
     }
 }
-@media (min-width: 1450px){
-    .footer__sitemap-menu{
-    justify-content: space-between;
+
+@media (min-width: 1450px) {
+    .footer__sitemap-menu {
+        justify-content: space-between;
     }
 }
 
-.areas{
+.areas {
     padding: 100px 199px 102px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    &__title{
+
+    &__title {
         @include h2-text();
         margin-bottom: 10px;
     }
-    &__text{
+
+    &__text {
         @include ordinary-text();
         margin-bottom: 80px;
         text-align: center;
     }
-    &__cards{
+
+    &__cards {
         display: flex;
 
     }
-    &__card{
+
+    &__card {
         cursor: pointer;
         width: 328px;
         height: 147px;
@@ -355,33 +377,104 @@ a {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        box-shadow: 0px 13px 19px 0px rgba(0,0,0,0.12);
+        box-shadow: 0px 13px 19px 0px rgba(0, 0, 0, 0.12);
         margin-right: 30px;
         border-radius: 5px;
-        &:hover{
+
+        &:hover {
             transform: scale(1.1);
             transition: all 0.3s ease;
         }
     }
-    &__card-title{
+
+    &__card-title {
         @include h5-text();
         color: $text-color;
     }
-    &__card-image{
+
+    &__card-image {
         margin-bottom: 15px;
     }
-    &__card--active{
+
+    &__card--active {
         box-shadow: none;
         background: #295C7A;
-        &:hover{
+
+        &:hover {
             transform: none;
 
         }
-        .areas__card-title{
+
+        .areas__card-title {
             color: white;
         }
-        .areas__card-image{
+
+        .areas__card-image {
             margin-bottom: 10px;
         }
     }
+}
+
+.advice {
+    background-color: #FAFAFA;
+    padding: 80px 195px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__title {
+        @include h2-text();
+        margin-bottom: 10px;
+        padding-top: 45px;
+    }
+
+    &__text {
+        @include ordinary-text();
+        margin-bottom: 80px;
+        text-align: center;
+        margin-bottom: 45px;
+    }
+
+    &__cards {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+    }
+
+    &__card {
+        cursor: pointer;
+        width: 238px;
+        height: 317px;
+        background: rgba(255,255,255, 1);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        margin-right: 30px;
+        border-radius: 5px;
+
+        &:hover {
+            transform: scale(1.1);
+            transition: all 0.3s ease;
+        }
+    }
+    &__card-content{
+        padding: 30px;
+    }
+
+    &__card-title {
+        @include h5-text();
+        color: $text-color;
+        margin-bottom: 15px;
+    }
+    &__card-text{
+        @include ordinary-text();
+    }
+
+    &__card-image {
+        width: 100%;
+    }
+
+    
 }
