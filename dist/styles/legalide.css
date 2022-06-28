@@ -834,6 +834,27 @@ img {
   align-items: center;
   margin-top: 58px;
 }
+.clients__logos img {
+  margin-right: 30px;
+}
+.clients__logos :nth-child(1) {
+  height: 34px;
+}
+.clients__logos :nth-child(2) {
+  height: 59px;
+}
+.clients__logos :nth-child(3) {
+  height: 75px;
+}
+.clients__logos :nth-child(4) {
+  height: 42px;
+}
+.clients__logos :nth-child(5) {
+  height: 62px;
+}
+.clients__logos :nth-child(6) {
+  height: 72px;
+}
 .clients__bottom {
   margin-top: auto;
   height: 77px;
