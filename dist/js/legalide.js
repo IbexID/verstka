@@ -30,23 +30,33 @@ eval("\n\n/* eslint-disable */\n\n/**\n * @param {string[]} pathComponents\n * @
 
 /***/ }),
 
-/***/ "./src/legalide.scss":
-/*!***************************!*\
-  !*** ./src/legalide.scss ***!
-  \***************************/
+/***/ "./src/styles/legalide.scss":
+/*!**********************************!*\
+  !*** ./src/styles/legalide.scss ***!
+  \**********************************/
 /***/ ((module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n    if(true) {\n      // 1656404015906\n      var cssReload = __webpack_require__(/*! ../node_modules/mini-css-extract-plugin/dist/hmr/hotModuleReplacement.js */ \"./node_modules/mini-css-extract-plugin/dist/hmr/hotModuleReplacement.js\")(module.id, {\"locals\":false});\n      module.hot.dispose(cssReload);\n      module.hot.accept(undefined, cssReload);\n    }\n  \n\n//# sourceURL=webpack:///./src/legalide.scss?");
+eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n    if(true) {\n      // 1656409767738\n      var cssReload = __webpack_require__(/*! ../../node_modules/mini-css-extract-plugin/dist/hmr/hotModuleReplacement.js */ \"./node_modules/mini-css-extract-plugin/dist/hmr/hotModuleReplacement.js\")(module.id, {\"locals\":false});\n      module.hot.dispose(cssReload);\n      module.hot.accept(undefined, cssReload);\n    }\n  \n\n//# sourceURL=webpack:///./src/styles/legalide.scss?");
 
 /***/ }),
 
-/***/ "./src/legalide.js":
-/*!*************************!*\
-  !*** ./src/legalide.js ***!
-  \*************************/
+/***/ "./src/js/legalide.js":
+/*!****************************!*\
+  !*** ./src/js/legalide.js ***!
+  \****************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _legalide_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./legalide.scss */ \"./src/legalide.scss\");\n\r\n\r\nconst burgerMenu = document.querySelector('.header__nav-burger')\r\nconst nav = document.querySelector('.header__nav')\r\nconst menu = document.querySelector('ul.header__nav-list')\r\n\r\n\r\nlet isActive = false;\r\nconst menuAppearance = () => {\r\n    if(document.body.clientWidth < 867){\r\n    if(!menu.classList.contains('hidden-menu')){\r\n        menu.classList.toggle('hidden-menu');\r\n        nav.style.marginBottom = '0'\r\n        } else {\r\n            menu.classList.toggle('hidden-menu');\r\n        nav.style.marginBottom = '460px'\r\n        }\r\n    }\r\n        \r\n}\r\nif(burgerMenu){\r\n    burgerMenu.addEventListener('click', menuAppearance)\r\n    isActive = true;\r\n} else {\r\n    if(isActive){\r\n        burgerMenu.removeEventListener('click', menuAppearance);\r\n        isActive = false;\r\n    }\r\n}\r\n\n\n//# sourceURL=webpack:///./src/legalide.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _styles_legalide_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../styles/legalide.scss */ \"./src/styles/legalide.scss\");\n/* harmony import */ var _legalideMenu__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./legalideMenu */ \"./src/js/legalideMenu.js\");\n\r\n\r\n\r\n\r\n(0,_legalideMenu__WEBPACK_IMPORTED_MODULE_1__[\"default\"])();\r\n\n\n//# sourceURL=webpack:///./src/js/legalide.js?");
+
+/***/ }),
+
+/***/ "./src/js/legalideMenu.js":
+/*!********************************!*\
+  !*** ./src/js/legalideMenu.js ***!
+  \********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nconst legalideMenu = () => {\r\n    const burgerMenu = document.querySelector('.header__nav-burger')\r\n    const nav = document.querySelector('.header__nav')\r\n    const menu = document.querySelector('ul.header__nav-list')\r\n\r\n\r\n    let isActive = false;\r\n    const menuAppearance = () => {\r\n        if (document.body.clientWidth < 867) {\r\n            if (!menu.classList.contains('hidden-menu')) {\r\n                menu.classList.toggle('hidden-menu');\r\n                nav.style.marginBottom = '0'\r\n            } else {\r\n                menu.classList.toggle('hidden-menu');\r\n                nav.style.marginBottom = '460px'\r\n            }\r\n        }\r\n\r\n    }\r\n    if (burgerMenu) {\r\n        burgerMenu.addEventListener('click', menuAppearance)\r\n        isActive = true;\r\n    } else {\r\n        if (isActive) {\r\n            burgerMenu.removeEventListener('click', menuAppearance);\r\n            isActive = false;\r\n        }\r\n    }\r\n}\r\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (legalideMenu);\n\n//# sourceURL=webpack:///./src/js/legalideMenu.js?");
 
 /***/ })
 
@@ -95,6 +105,18 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _leg
 /******/ 	__webpack_require__.i = [];
 /******/ 	
 /************************************************************************/
+/******/ 	/* webpack/runtime/define property getters */
+/******/ 	(() => {
+/******/ 		// define getter functions for harmony exports
+/******/ 		__webpack_require__.d = (exports, definition) => {
+/******/ 			for(var key in definition) {
+/******/ 				if(__webpack_require__.o(definition, key) && !__webpack_require__.o(exports, key)) {
+/******/ 					Object.defineProperty(exports, key, { enumerable: true, get: definition[key] });
+/******/ 				}
+/******/ 			}
+/******/ 		};
+/******/ 	})();
+/******/ 	
 /******/ 	/* webpack/runtime/get javascript update chunk filename */
 /******/ 	(() => {
 /******/ 		// This function allow to reference all chunks
@@ -120,7 +142,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _leg
 /******/ 	
 /******/ 	/* webpack/runtime/getFullHash */
 /******/ 	(() => {
-/******/ 		__webpack_require__.h = () => ("ca0a91f7e4220dd304ae")
+/******/ 		__webpack_require__.h = () => ("52a1e71e2ad961dd1c52")
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/global */
@@ -608,7 +630,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _leg
 /******/ 		// or pass an empty string ("") and set the __webpack_public_path__ variable from your code to use your own logic.
 /******/ 		if (!scriptUrl) throw new Error("Automatic publicPath is not supported in this browser");
 /******/ 		scriptUrl = scriptUrl.replace(/#.*$/, "").replace(/\?.*$/, "").replace(/\/[^\/]+$/, "/");
-/******/ 		__webpack_require__.p = scriptUrl;
+/******/ 		__webpack_require__.p = scriptUrl + "../";
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/css loading */
@@ -1218,7 +1240,8 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _leg
 /******/ 	// module cache are used so entry inlining is disabled
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
-/******/ 	var __webpack_exports__ = __webpack_require__("./src/legalide.js");
+/******/ 	__webpack_require__("./src/js/legalide.js");
+/******/ 	var __webpack_exports__ = __webpack_require__("./src/styles/legalide.scss");
 /******/ 	
 /******/ })()
 ;

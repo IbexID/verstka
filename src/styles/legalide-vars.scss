@@ -1,0 +1,91 @@
+$text-color: #252B42;
+$second-text-color: #737373;
+$brown-color: #784F33;
+
+@mixin h1-text {
+    font-family: "Martel", serif;
+    font-weight: 900;
+    font-size: 58px;
+    line-height: 65px;
+    letter-spacing: .2px;
+}
+
+@mixin h2-text {
+    font-family: 'Martel', serif;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 50px;
+    letter-spacing: 0.2px
+}
+
+@mixin h3-text {
+
+    font-family: 'Martin', serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 32px;
+    color: $text-color;
+    letter-spacing: 1px;
+}
+
+@mixin h4-text {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: .2px;
+}
+
+@mixin h5-text {
+    font-family: 'Martel', serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.1px;
+    color: white;
+}
+
+@mixin h6-text {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+    color: white;
+}
+
+@mixin second-text {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+    color: $second-text-color;
+}
+
+@mixin ordinary-text {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.2px;
+    color: $second-text-color;
+}
+
+@mixin button-text {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    line-height: 28px;
+    letter-spacing: 0.2px;
+    font-weight: 700;
+}
+
+@mixin mobile-menu {
+    font-family: 'Open Sans';
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 45px;
+    text-align: center;
+    letter-spacing: 0.2px;
+    color: $second-text-color;
+}
