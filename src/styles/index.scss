@@ -4,16 +4,20 @@
     text-decoration: none;
     color: inherit;
 }
-
-.legalide {
+.pages{
+    display: flex;
+    justify-content: center;
+}
+.page {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     margin-top: 5%;
+    margin-right: 50px;
     &__preview {
-        width: 600px;
-        height: auto;
+        height: 400px;
+        width: auto;
         box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.103);
         border-radius: 4px;
         margin-bottom: 10px;

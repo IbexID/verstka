@@ -1,0 +1,30 @@
+/*!****************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/styles/index.scss ***!
+  \****************************************************************************************************************/
+* {
+  font-family: "Montserrat", sans-serif;
+  background-color: rgb(197, 174, 174);
+  text-decoration: none;
+  color: inherit;
+}
+
+.pages {
+  display: flex;
+  justify-content: center;
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5%;
+  margin-right: 50px;
+}
+.page__preview {
+  height: 400px;
+  width: auto;
+  box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.103);
+  border-radius: 4px;
+  margin-bottom: 10px;
+}

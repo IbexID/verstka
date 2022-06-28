@@ -8,7 +8,7 @@ module.exports = {
     mode: 'development',
     entry: {
         legalide: ['./src/js/legalide.js', './src/styles/legalide.scss'],
-        welcome: ['./src/js/welcome.js', './src/styles/welcome.scss'],
+        index: ['./src/js/index.js', './src/styles/index.scss'],
         gps: ['./src/js/gps.js', './src/styles/gps.scss'],
     },
     output: {
@@ -52,10 +52,10 @@ module.exports = {
             chunks: ['legalide']
         }),
         new HtmlWebpackPlugin({
-            title: 'welcome',
-            template: path.resolve(__dirname, './src/welcome.html'),
-            filename: 'welcome.html',
-            chunks: ['welcome']
+            title: 'index',
+            template: path.resolve(__dirname, './src/index.html'),
+            filename: 'index.html',
+            chunks: ['index']
         }),
         new HtmlWebpackPlugin({
             title: 'gps',
