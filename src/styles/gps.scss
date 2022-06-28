@@ -1,0 +1,80 @@
+@font-face {
+    font-family: 'Century Gothic';
+    src: url('../fonts/century_gothic.woff2');
+    font-weight: 400;
+}
+
+$text-color: rgba(74, 74, 74, 1);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+html,
+body {
+    width: 100%;
+    max-width: 100%;
+}
+
+a {
+
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    display: block;
+}
+
+.logo {
+    &__title {
+        font-family: 'Work Sans', sans-serif;
+        font-weight: 900;
+        font-size: 81px;
+        line-height: 95px;
+        width: 209px;
+        background: linear-gradient(90deg, #2A2D3E 0%, #FFC633 100%);
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
+        -moz-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        -o-text-fill-color: transparent;
+        -moz-text-fill-color: transparent;
+    }
+
+    &__text {
+        font-family: 'Work Sans', sans-serif;
+        font-size: 13px;
+        line-height: 15px;
+        font-weight: 700;
+        color: rgba(36, 23, 61, 1);
+    }
+}
+
+.footer {
+    height: 254px;
+    background-color: white;
+
+    &__logo {
+        width: 206px;
+        margin: 70px auto 40px;
+    }
+
+    &__copyright {
+        text-align: center;
+        font-family: 'Century Gothic';
+        font-weight: 400;
+        background-color: rgba(230, 229, 234, 0.15);
+        color: $text-color;
+        padding: 15px 0;
+    }
+
+    &__copyright-link {
+        text-decoration: underline;
+        color: rgba(248, 181, 0, 1);
+    }
+}

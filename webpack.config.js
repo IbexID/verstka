@@ -9,6 +9,7 @@ module.exports = {
     entry: {
         legalide: ['./src/js/legalide.js', './src/styles/legalide.scss'],
         welcome: ['./src/js/welcome.js', './src/styles/welcome.scss'],
+        gps: ['./src/js/gps.js', './src/styles/gps.scss'],
     },
     output: {
 
@@ -37,9 +38,6 @@ module.exports = {
             {
                 test: /\.(?:ico|gif|png|jpg|jpeg)$/i,
                 type: 'asset/resource',
-                /* generator: {
-                    filename: 'images/[name][ext]'
-                } */
             },
         ]
     },
@@ -58,6 +56,12 @@ module.exports = {
             template: path.resolve(__dirname, './src/welcome.html'),
             filename: 'welcome.html',
             chunks: ['welcome']
+        }),
+        new HtmlWebpackPlugin({
+            title: 'gps',
+            template: path.resolve(__dirname, './src/gps.html'),
+            filename: 'gps.html',
+            chunks: ['gps']
         }),
         new webpack.HotModuleReplacementPlugin(),
         new MiniCssExtractPlugin({

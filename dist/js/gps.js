@@ -30,23 +30,23 @@ eval("\n\n/* eslint-disable */\n\n/**\n * @param {string[]} pathComponents\n * @
 
 /***/ }),
 
-/***/ "./src/styles/welcome.scss":
-/*!*********************************!*\
-  !*** ./src/styles/welcome.scss ***!
-  \*********************************/
+/***/ "./src/styles/gps.scss":
+/*!*****************************!*\
+  !*** ./src/styles/gps.scss ***!
+  \*****************************/
 /***/ ((module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n    if(true) {\n      // 1656415611835\n      var cssReload = __webpack_require__(/*! ../../node_modules/mini-css-extract-plugin/dist/hmr/hotModuleReplacement.js */ \"./node_modules/mini-css-extract-plugin/dist/hmr/hotModuleReplacement.js\")(module.id, {\"locals\":false});\n      module.hot.dispose(cssReload);\n      module.hot.accept(undefined, cssReload);\n    }\n  \n\n//# sourceURL=webpack:///./src/styles/welcome.scss?");
+eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n    if(true) {\n      // 1656415611851\n      var cssReload = __webpack_require__(/*! ../../node_modules/mini-css-extract-plugin/dist/hmr/hotModuleReplacement.js */ \"./node_modules/mini-css-extract-plugin/dist/hmr/hotModuleReplacement.js\")(module.id, {\"locals\":false});\n      module.hot.dispose(cssReload);\n      module.hot.accept(undefined, cssReload);\n    }\n  \n\n//# sourceURL=webpack:///./src/styles/gps.scss?");
 
 /***/ }),
 
-/***/ "./src/js/welcome.js":
-/*!***************************!*\
-  !*** ./src/js/welcome.js ***!
-  \***************************/
+/***/ "./src/js/gps.js":
+/*!***********************!*\
+  !*** ./src/js/gps.js ***!
+  \***********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _styles_welcome_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../styles/welcome.scss */ \"./src/styles/welcome.scss\");\n\n\n//# sourceURL=webpack:///./src/js/welcome.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _styles_gps_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../styles/gps.scss */ \"./src/styles/gps.scss\");\n\n\n//# sourceURL=webpack:///./src/js/gps.js?");
 
 /***/ })
 
@@ -115,7 +115,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _sty
 /******/ 	
 /******/ 	/* webpack/runtime/get update manifest filename */
 /******/ 	(() => {
-/******/ 		__webpack_require__.hmrF = () => ("welcome." + __webpack_require__.h() + ".hot-update.json");
+/******/ 		__webpack_require__.hmrF = () => ("gps." + __webpack_require__.h() + ".hot-update.json");
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/getFullHash */
@@ -706,7 +706,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _sty
 /******/ 		// undefined = chunk not loaded, null = chunk preloaded/prefetched
 /******/ 		// [resolve, reject, Promise] = chunk loading, 0 = chunk loaded
 /******/ 		var installedChunks = __webpack_require__.hmrS_jsonp = __webpack_require__.hmrS_jsonp || {
-/******/ 			"welcome": 0
+/******/ 			"gps": 0
 /******/ 		};
 /******/ 		
 /******/ 		// no chunk on demand loading
@@ -1218,8 +1218,8 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _sty
 /******/ 	// module cache are used so entry inlining is disabled
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
-/******/ 	__webpack_require__("./src/js/welcome.js");
-/******/ 	var __webpack_exports__ = __webpack_require__("./src/styles/welcome.scss");
+/******/ 	__webpack_require__("./src/js/gps.js");
+/******/ 	var __webpack_exports__ = __webpack_require__("./src/styles/gps.scss");
 /******/ 	
 /******/ })()
 ;
