@@ -101,8 +101,12 @@ img {
 
 .header {
     background-image: url('./images/header-bg.png');
+    width: 100%;
+    background-size: cover;
+    background-size: auto;
 
     &__nav {
+        width: 100%;
         padding: 0 60px;
         display: flex;
         align-items: center;
@@ -159,14 +163,16 @@ img {
 
 
     &__container {
+        width: 100%;
         padding: 0 196px;
         min-height: 681px;
         background-image: url('./images/header-content-bg.png');
         background-repeat: no-repeat;
-        background-position: right 170px bottom;
+        background-position: right 11rem bottom;
     }
 
     &__content {
+        width: 100%;
         padding-top: 154px;
     }
 
@@ -187,6 +193,17 @@ img {
 
     &__button:first-child {
         margin-right: 10px;
+    }
+}
+
+@media (max-width:1140px){
+    .header{
+        &__nav{
+        padding: 0 ;
+        }
+        &__container{
+            padding: 0 100px;
+        }
     }
 }
 
@@ -524,6 +541,7 @@ img {
         margin-bottom: 100px;
         @include ordinary-text();
         max-width: 468px;
+        text-align: center;
     }
 
     &__content {

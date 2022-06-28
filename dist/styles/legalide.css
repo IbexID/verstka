@@ -19,8 +19,12 @@ img {
 
 .header {
   background-image: url(../images/header-bg.png);
+  width: 100%;
+  background-size: cover;
+  background-size: auto;
 }
 .header__nav {
+  width: 100%;
   padding: 0 60px;
   display: flex;
   align-items: center;
@@ -78,13 +82,15 @@ img {
   margin-left: 140px;
 }
 .header__container {
+  width: 100%;
   padding: 0 196px;
   min-height: 681px;
   background-image: url(../images/header-content-bg.png);
   background-repeat: no-repeat;
-  background-position: right 170px bottom;
+  background-position: right 11rem bottom;
 }
 .header__content {
+  width: 100%;
   padding-top: 154px;
 }
 .header__title {
@@ -111,6 +117,14 @@ img {
   margin-right: 10px;
 }
 
+@media (max-width: 1140px) {
+  .header__nav {
+    padding: 0;
+  }
+  .header__container {
+    padding: 0 100px;
+  }
+}
 .burger-menu {
   margin-top: 5px !important;
   margin-left: 1px !important;
@@ -474,6 +488,7 @@ img {
   letter-spacing: 0.2px;
   color: #737373;
   max-width: 468px;
+  text-align: center;
 }
 .about__content {
   display: flex;
