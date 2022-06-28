@@ -98,12 +98,14 @@ $brown-color: #784F33;
     box-sizing: border-box;
     list-style: none;
 }
+
 html,
-body{
-    overflow-x:hidden;
+body {
+    overflow-x: hidden;
     width: 100%;
     max-width: 100%;
 }
+
 a {
 
     text-decoration: none;
@@ -126,6 +128,7 @@ img {
         align-items: center;
         justify-content: space-between;
         height: 104px;
+        transition: all 0.2s;
     }
 
     &__nav-logo {
@@ -146,6 +149,12 @@ img {
     }
 
     &__nav-list {
+        opacity: 1;
+        visibility: visible;
+        -webkit-transition: visibility 0.2s linear, opacity 0.2s linear;
+        -moz-transition: visibility 0.2s linear, opacity 0.2s linear;
+        -o-transition: visibility 0.2s linear, opacity 0.2s linear;
+        transition: all 0.2s linear;
         display: flex;
         justify-content: space-between;
         @include second-text;
@@ -353,6 +362,12 @@ img {
     }
 }
 
+.hidden-menu {
+    opacity: 0;
+    visibility: hidden;
+
+}
+
 .button {
     max-height: 48px;
     width: fit-content;
@@ -549,44 +564,55 @@ img {
         }
     }
 }
-@media (max-width:886px){
-    .footer{
-        &__container{
+
+@media (max-width:886px) {
+    .footer {
+        &__container {
             padding: 40px 90px;
         }
-        &__consult{
+
+        &__consult {
             padding: 0;
             flex-direction: column;
             align-items: center;
         }
-        &__consult-description{
+
+        &__consult-description {
             max-width: 236px;
             margin-bottom: 50px;
         }
-        &__consult-title{
+
+        &__consult-title {
             @include h3-text();
         }
-        &__consult-button{
-            
+
+        &__consult-button {
+
             width: 236px;
         }
-        &__sitemap{
+
+        &__sitemap {
             padding: 50px 0 50px 88px;
         }
-        &__sitemap-menu{
+
+        &__sitemap-menu {
             flex-direction: column;
         }
-        &__menu-list{
+
+        &__menu-list {
             margin-right: 0;
             margin-bottom: 30px;
         }
-        &__copyright{
+
+        &__copyright {
             flex-direction: column;
         }
-        &__copyright-text{
+
+        &__copyright-text {
             margin-bottom: 50px;
         }
-        &__copyright-social{
+
+        &__copyright-social {
             padding-bottom: 100px;
         }
     }
@@ -939,25 +965,32 @@ img {
         justify-content: center;
         align-items: center;
         margin-top: 58px;
-        img{
+
+        img {
             margin-right: 30px;
         }
-        :nth-child(1){
+
+        :nth-child(1) {
             height: 34px;
         }
-        :nth-child(2){
+
+        :nth-child(2) {
             height: 59px;
         }
-        :nth-child(3){
+
+        :nth-child(3) {
             height: 75px;
         }
-        :nth-child(4){
+
+        :nth-child(4) {
             height: 42px;
         }
-        :nth-child(5){
+
+        :nth-child(5) {
             height: 62px;
         }
-        :nth-child(6){
+
+        :nth-child(6) {
             height: 72px;
         }
     }
@@ -1056,6 +1089,7 @@ img {
 @media (max-width:886px) {
     .clients {
         height: auto;
+
         &__logos {
             flex-direction: column;
             margin-top: 0;
@@ -1066,32 +1100,38 @@ img {
                 margin: 50px 0 60px;
             }
         }
-        &__bottom{
+
+        &__bottom {
             background-color: transparent;
             margin-bottom: 230px;
             width: 100%;
         }
-        &__subscribe{
+
+        &__subscribe {
             bottom: -230px;
             width: 100%;
         }
-        &__subscribe-form{
+
+        &__subscribe-form {
             flex-direction: column;
             align-items: center;
             height: 214px;
             width: 100%;
         }
-        &__subscribe-label{
+
+        &__subscribe-label {
             margin: 0;
             text-align: center;
         }
-        &__subscribe-input{
+
+        &__subscribe-input {
             bottom: 30px;
             width: 337px;
             right: 50%;
             transform: translate(50%);
         }
-        &__subscribe-button{
+
+        &__subscribe-button {
             right: 20%;
             bottom: 30px;
         }
@@ -1166,14 +1206,17 @@ img {
         }
     }
 }
-@media (max-width:886px){
-    .contacts{
+
+@media (max-width:886px) {
+    .contacts {
         padding: 75px 42px 117px;
-        &__cards{
+
+        &__cards {
             flex-direction: column;
         }
-        &__card{
-            width:327px;
+
+        &__card {
+            width: 327px;
             margin-bottom: 30px;
         }
     }
