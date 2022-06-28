@@ -10,7 +10,7 @@
         @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;600;700;800;900&family=Open+Sans:wght@700&family=Work+Sans:wght@700;900&display=swap');
     </style>
 
-<script defer src="js/gps.js"></script></head>
+<script defer src="js/gps.js"></script><link href="styles/gps.css" rel="stylesheet"></head>
 
 <body>
     <header class="header">
@@ -24,31 +24,118 @@
         <button class="header__button">Заказать звонок</button>
     </header>
     <main class="main">
-        <div class="consultation">
-            <div class="consultation__content">
-                <h2 class="consultation__content-title">НЕДВИЖИМОСТЬ</h2>
-                <p class="consultation__content-text">в Объединенных Арабских Эмиратах</p>
-                <h3 class="consultation__content-subtitle">Лучшая инвестиция!</h3>
-                <p class="consultation__content-subtext">Компания Golden Property Soulution предлагает подбор и продажу инвестиционной недвижимости</p>
-                <h5 class="consultation__content-credit">В РАССРОЧКУ НА 3-5 ЛЕТ!</h5>
+        <div class="consult">
+            <div class="consult__content">
+                <h2 class="consult__content-title">НЕДВИЖИМОСТЬ</h2>
+                <p class="consult__content-text">в Объединенных Арабских Эмиратах</p>
+                <h3 class="consult__content-subtitle">Лучшая инвестиция!</h3>
+                <p class="consult__content-subtext">Компания <span class="consult__content-subtext--yellow">Golden
+                        Property Solution</span> предлагает<br /> подбор и продажу инвестиционной недвижимости</p>
+                <h5 class="consult__content-credit">В РАССРОЧКУ НА 3-5 ЛЕТ!</h5>
             </div>
 
-            <form class="consultation__form">
-                <div class="consultation__form-info">
-                    <h1 class="consultation__form-title">получите</h1>
-                    <p class="consultation__form-text">консультацию специалиста</p>
-                    <p class="consultation__form-subtext">По недвижимости в Дубае</p>
+            <form class="consult__form">
+                <div class="consult__form-info">
+                    <h1 class="consult__form-title">получите</h1>
+                    <p class="consult__form-text">консультацию специалиста</p>
+                    <p class="consult__form-subtext">По недвижимости в Дубае</p>
                 </div>
-                <div class="consultation__form-inputs">
-                    <input type="text" class="consultation__form-input" placeholder="Введите имя">
-                    <input type="phone" class="consultation__form-input" placeholder="Введите телефон">
+                <div class="consult__form-inputs">
+                    <input type="text" class="consult__form-input" placeholder="Введите имя">
+                    <input type="phone" class="consult__form-input" placeholder="Введите телефон">
                 </div>
-                <button type="submit" class="consultation__form-button">Получить консультацию</button>
+                <button type="submit" class="consult__form-button">Получить консультацию</button>
             </form>
         </div>
-        <div class="advantages"></div>
-        <div class="realty"></div>
-        <div class="invest"></div>
+        <div class="advantages">
+            <h3 class="advantages__title">Наши преимущества</h3>
+            <div class="advantages__grid">
+                <div class="advantages__item">
+                    <img class="advantages__item-image" src="images/icons/gps-adv-1.png" alt="icon">
+                    <p class="advantages__item-text">Принимаем Bitcoin </p>
+                </div>
+                <div class="advantages__item">
+                    <img class="advantages__item-image" src="images/icons/gps-adv-2.png" alt="icon">
+                    <p class="advantages__item-text">Рассрочка на 3-5 лет</p>
+                </div>
+                <div class="advantages__item">
+                    <img class="advantages__item-image" src="images/icons/gps-adv-3.png" alt="icon">
+                    <p class="advantages__item-text">Управление недвижимостью после покупки</p>
+                </div>
+                <div class="advantages__item">
+                    <img class="advantages__item-image" src="images/icons/gps-adv-4.png" alt="icon">
+                    <p class="advantages__item-text">Инвестиционный доход до 15% годовых</p>
+                </div>
+                <div class="advantages__item">
+                    <img class="advantages__item-image" src="images/icons/gps-adv-5.png" alt="icon">
+                    <p class="advantages__item-text">Получение резидентской визы на 2 года</p>
+                </div>
+                <div class="advantages__item">
+                    <img class="advantages__item-image" src="images/icons/gps-adv-6.png" alt="icon">
+                    <p class="advantages__item-text">Возможность взять кредит в банках Дубая</p>
+                </div>
+            </div>
+        </div>
+        <div class="realty">
+            <h3 class="realty__title">Виды недвижимости, которые мы продаем</h3>
+            <div class="realty__cards">
+                <div class="realty__card">
+                    <img class="realty__card-image" src="images/gps-card-1.png" alt="">
+                    <div class="realty__card-info">
+                        <h5 class="realty__card-title">Студии</h5>
+                        <button class="realty__card-button">Узнать подробнее</button>
+                    </div>
+                </div>
+                <div class="realty__card">
+                    <img class="realty__card-image" src="images/gps-card-2.png" alt="">
+                    <div class="realty__card-info">
+                        <h5 class="realty__card-title">Апартаменты</h5>
+                        <button class="realty__card-button">Узнать подробнее</button>
+                    </div>
+                </div>
+                <div class="realty__card">
+                    <img class="realty__card-image" src="images/gps-card-3.png" alt="">
+                    <div class="realty__card-info">
+                        <h5 class="realty__card-title">Пентхаусы</h5>
+                        <button class="realty__card-button">Узнать подробнее</button>
+                    </div>
+                </div>
+                <div class="realty__card">
+                    <img class="realty__card-image" src="images/gps-card-4.png" alt="">
+                    <div class="realty__card-info">
+                        <h5 class="realty__card-title">Таунхаусы</h5>
+                        <button class="realty__card-button">Узнать подробнее</button>
+                    </div>
+                </div>
+                <div class="realty__card">
+                    <img class="realty__card-image" src="images/gps-card-5.png" alt="">
+                    <div class="realty__card-info">
+                        <h5 class="realty__card-title">Виллы</h5>
+                        <button class="realty__card-button">Узнать подробнее</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="invest">
+            <h2 class="invest__title">Усредненные данные <br/>по инвестициям <br/>в недвижимость Дубая</h2>
+            <div class="invest__card">
+                <div class="invest__card-col">
+                    <p class="invest__card-text">Первый<br/>взнос</p>
+                    <p class="invest__card-percent"><span class="invest__card-prefix">от </span>5%</p>
+                    <p class="invest__card-text">стоимости <br/>недвижимости</p>
+                </div>
+                <div class="invest__card-col">
+                    <p class="invest__card-text">Средний<br/>ROI</p>
+                    <p class="invest__card-percent">10%</p>
+                    <p class="invest__card-text">годовых</p>
+                </div>
+                <div class="invest__card-col">
+                    <p class="invest__card-text">Рост стоимости<br/>недвижимости</p>
+                    <p class="invest__card-percent"><span class="invest__card-prefix">от </span>10%</p>
+                    <p class="invest__card-text">годовых</p>
+                </div>
+            </div>
+        </div>
         <div class="subscription"></div>
     </main>
     <footer class="footer">
