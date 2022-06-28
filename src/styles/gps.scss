@@ -37,6 +37,28 @@ img {
     display: block;
 }
 
+input {
+    font-family: 'Montserrat', sans-serif;
+    padding: 21px 0 21px 20px;
+    border: none;
+    border-radius: 5px;
+    height: 65px;
+    width: 385px;
+    outline: none;
+    font-weight: 200;
+    font-size: 19px;
+    line-height: 23px;
+    color: rgba(92, 92, 92, 1);
+
+    &:hover {
+        opacity: 0.9;
+    }
+
+    &:focus {
+        opacity: 1;
+    }
+}
+
 .header {
     display: flex;
     align-items: center;
@@ -264,25 +286,7 @@ img {
     }
 
     &__form-input {
-        font-family: 'Montserrat', sans-serif;
-        padding: 21px 0 21px 20px;
-        border: none;
-        border-radius: 5px;
-        height: 65px;
-        width: 385px;
-        outline: none;
-        font-weight: 200;
-        font-size: 19px;
-        line-height: 23px;
-        color: rgba(92, 92, 92, 1);
 
-        &:hover {
-            opacity: 0.9;
-        }
-
-        &:focus {
-            opacity: 1;
-        }
 
         &:first-of-type {
             margin-right: 20px;
@@ -394,6 +398,15 @@ img {
     &__card {
         position: relative;
         align-self: stretch;
+        &::after{
+            position: absolute;
+            content: '';
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(180deg, rgba(17, 10, 33, 0) 0%, rgba(20, 12, 38, 0.75) 100%);
+            bottom: 0;
+
+        }
     }
 
     &__card:nth-of-type(1) {
@@ -423,6 +436,7 @@ img {
     }
 
     &__card-info {
+        z-index: 2;
         position: absolute;
         display: flex;
         flex-direction: column;
@@ -503,9 +517,11 @@ img {
         flex-direction: column;
         align-items: center;
     }
-    &__card-col:not(:last-child){
+
+    &__card-col:not(:last-child) {
         position: relative;
-        &::before{
+
+        &::before {
             position: absolute;
             content: '';
             width: 2px;
@@ -536,8 +552,9 @@ img {
         line-height: 85px;
         color: #24173D;
         position: relative;
+
         &::before,
-        &::after{
+        &::after {
             position: absolute;
             content: '';
             background-color: white;
@@ -546,7 +563,8 @@ img {
             left: 0;
             top: 0;
         }
-        &::after{
+
+        &::after {
             top: auto;
             bottom: 0;
         }
@@ -558,6 +576,60 @@ img {
         line-height: 36.5px;
     }
 }
+
+.subscription {
+    width: 100%;
+    height: 398px;
+    padding-top: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(0deg, rgba(17, 10, 31, 0.7), rgba(17, 10, 31, 0.7)),url('../images/gps-subscription-bg.jpg');
+    
+
+    &__title {
+        font-family: 'Montserrat';
+        font-weight: 800;
+        font-size: 44px;
+        line-height: 53.5px;
+        text-align: center;
+        color: white;
+        margin-bottom: 20px;
+    }
+
+    &__text {
+        font-family: 'Montserrat';
+        font-weight: 400;
+        font-size: 30px;
+        line-height: 36.5px;
+        text-align: center;
+        color: white;
+        margin-bottom: 60px;
+    }
+
+    &__form {
+        display: flex;
+    }
+    &__input{
+        margin-right: 20px;
+    }
+
+    &__button {
+        padding: 17.5px 64.5px;
+        background: #FFC633;
+        border-radius: 5px;
+        text-transform: uppercase;
+        color: #24173D;
+        font-family: 'Montserrat';
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 22px;
+        &:hover{
+            opacity: 0.9;
+        }
+    }
+}
+
 
 .footer {
     height: 254px;
