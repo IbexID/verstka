@@ -18,15 +18,17 @@ body {
     width: 100%;
     max-width: 100%;
 }
-body{
+
+body {
     background-color: white;
 }
-button{
+
+button {
     border: none;
     cursor: pointer;
 }
-a {
 
+a {
     text-decoration: none;
     color: inherit;
 }
@@ -34,21 +36,25 @@ a {
 img {
     display: block;
 }
-.header{
+
+.header {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 20px 160px;
-    &__logo{
+
+    &__logo {
         position: relative;
         width: 209px;
         margin-right: 92px;
-        .logo__text{
-            -webkit-text-stroke: 1px  #000000;
-            -o-text-stroke: 1px  #000000;
-            -moz-text-stroke: 1px  #000000;
+
+        .logo__text {
+            -webkit-text-stroke: 1px #000000;
+            -o-text-stroke: 1px #000000;
+            -moz-text-stroke: 1px #000000;
         }
-        ::before{
+
+        ::before {
             position: absolute;
             content: '';
             width: 2px;
@@ -60,7 +66,8 @@ img {
             background-color: rgba(59, 57, 60, 1);
         }
     }
-    &__title{
+
+    &__title {
         text-transform: uppercase;
         font-family: 'Montserrat';
         font-weight: 400;
@@ -68,7 +75,8 @@ img {
         line-height: 30px;
         color: rgba(36, 23, 61, 1);
     }
-    &__contacts{
+
+    &__contacts {
         cursor: pointer;
         display: flex;
         align-items: center;
@@ -77,11 +85,16 @@ img {
         font-size: 24px;
         line-height: 29px;
         color: rgba(36, 23, 61, 1);
+        &:hover{
+            opacity: 0.8;
+        }
     }
-    &__phone{
+
+    &__phone {
         margin-right: 10px;
     }
-    &__button{
+
+    &__button {
         font-family: 'Open Sans', sans-serif;
         font-weight: 700;
         font-size: 18px;
@@ -89,10 +102,15 @@ img {
         padding: 12.5px 45.5px;
         background-color: rgba(255, 198, 51, 1);
         border-radius: 30px;
+        &:hover{
+            opacity: 0.8;
+        }
     }
 }
+
 .logo {
     &__title {
+        cursor: pointer;
         font-family: 'Work Sans', sans-serif;
         text-align: center;
         padding-right: 5px;
@@ -117,6 +135,168 @@ img {
         font-weight: 700;
         color: rgba(36, 23, 61, 1);
         text-transform: uppercase;
+    }
+}
+
+
+.consult {
+    background-image: url('../images/gps-consult-bg.png');
+    height: 738px;
+    background-size: cover;
+    padding: 105px 160px 172px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &__content {
+
+        font-family: 'Montserrat', sans-serif;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        color: white;
+    }
+
+    &__content-title {
+        font-weight: 800;
+        font-size: 67px;
+        line-height: 70px;
+        text-transform: uppercase;
+    }
+
+    &__content-text {
+        font-weight: 300;
+        font-size: 29px;
+        line-height: 70px;
+        text-transform: uppercase;
+        margin-bottom: 62px;
+        position: relative;
+
+        &::before {
+            position: absolute;
+            content: '';
+            height: 2px;
+            width: 462px;
+            background-color: white;
+            bottom: -30px;
+            left: 50%;
+            transform: translate(-50%);
+            border-radius: 100%;
+        }
+    }
+
+    &__content-subtitle {
+        font-weight: 700;
+        font-size: 56px;
+        line-height: 60px;
+        margin-bottom: 30px;
+
+    }
+
+    &__content-subtext {
+        font-size: 24px;
+        line-height: 33px;
+        margin-bottom: 10px;
+    }
+
+    &__content-subtext--yellow {
+        color: rgba(246, 191, 51, 1);
+        font-weight: 700;
+    }
+
+    &__content-credit {
+        text-transform: uppercase;
+        color: rgba(246, 191, 51, 1);
+        font-size: 24px;
+        line-height: 33px;
+    }
+
+    &__form {
+        font-family: 'Montserrat', sans-serif;
+        padding: 50px;
+        width: 890px;
+        height: 461px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        box-shadow: 10px 25px 45px 0px rgba(0, 0, 0, 0.15);
+        background-color: rgba(255, 198, 51, 1);
+        border-radius: 30px;
+        text-align: center;
+    }
+
+    &__form-info {
+        margin-bottom: 30px;
+    }
+
+    &__form-title {
+        color: rgba(36, 23, 61, 1);
+        font-weight: 800;
+        font-size: 87px;
+        line-height: 106px;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+    }
+
+    &__form-text {
+        font-weight: 400;
+        color: rgba(36, 23, 61, 1);
+        font-size: 29px;
+        line-height: 42px;
+        text-transform: uppercase;
+        margin-bottom: 10px;
+    }
+
+    &__form-subtext {
+        color: white;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 24px;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+    }
+
+    &__form-inputs {
+        margin-bottom: 30px;
+        display: flex;
+    }
+
+    &__form-input {
+        font-family: 'Montserrat', sans-serif;
+        padding: 21px 0 21px 20px;
+        border: none;
+        border-radius: 5px;
+        height: 65px;
+        width: 385px;
+        outline: none;
+        font-weight: 200;
+        font-size: 19px;
+        line-height: 23px;
+        color: rgba(92, 92, 92, 1);
+        &:hover{
+            opacity: 0.9;
+        }
+        &:focus{
+            opacity: 1;
+        }
+
+        &:first-of-type {
+            margin-right: 20px;
+        }
+    }
+    &__form-button{
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 22px;
+        padding: 21.5px 36.5px;
+        color: white;
+        background-color: rgba(36, 23, 61, 1);
+        box-shadow: 4px 4px 8px 0px rgba(23, 55, 95, 0.2);
+        border-radius: 43px;
+        &:hover{
+            opacity: 0.8;
+        }
     }
 }
 
