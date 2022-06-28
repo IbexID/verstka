@@ -300,6 +300,60 @@ img {
     }
 }
 
+.advantages{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 110px 70px 44px;
+    position: relative;
+    &__title{
+        z-index: 3;
+        position: absolute;
+        top: 80px;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 700;
+        font-size: 44px;
+        line-height: 60px;
+        color: rgba(36, 23, 61, 1);
+    }
+    &__grid{
+        padding: 90px;
+        display: grid;
+        gap: 93px;
+        grid-template: 1fr 1fr / 1fr 1fr 1fr;
+        border-radius: 20px;
+        border: 5px double rgba(3, 3, 3, 1);   
+        position: relative;
+        &::before{
+            position: absolute;
+            content: '';
+            background-color: white;
+            height: 64px;
+            width: 567px;
+            left: 50%;
+            top: -32px;
+            transform: translate(-50%);
+        } 
+    }
+    &__item{
+        display: flex;
+        align-items: center;
+    }
+    &__item-image{
+        object-fit: cover;
+        max-height: 80px;
+        width: auto;
+        margin-right: 40px;
+    }
+    &__item-text{
+        font-family: Montserrat, sans-serif;
+        font-weight: 300;
+        font-size: 24px;
+        line-height: 29px;
+    }
+}
+
 .footer {
     height: 254px;
     background-color: white;
