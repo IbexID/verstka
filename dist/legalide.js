@@ -36,7 +36,7 @@ eval("\n\n/* eslint-disable */\n\n/**\n * @param {string[]} pathComponents\n * @
   \***************************/
 /***/ ((module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n    if(true) {\n      // 1656393073008\n      var cssReload = __webpack_require__(/*! ../node_modules/mini-css-extract-plugin/dist/hmr/hotModuleReplacement.js */ \"./node_modules/mini-css-extract-plugin/dist/hmr/hotModuleReplacement.js\")(module.id, {\"locals\":false});\n      module.hot.dispose(cssReload);\n      module.hot.accept(undefined, cssReload);\n    }\n  \n\n//# sourceURL=webpack:///./src/legalide.scss?");
+eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n    if(true) {\n      // 1656404015906\n      var cssReload = __webpack_require__(/*! ../node_modules/mini-css-extract-plugin/dist/hmr/hotModuleReplacement.js */ \"./node_modules/mini-css-extract-plugin/dist/hmr/hotModuleReplacement.js\")(module.id, {\"locals\":false});\n      module.hot.dispose(cssReload);\n      module.hot.accept(undefined, cssReload);\n    }\n  \n\n//# sourceURL=webpack:///./src/legalide.scss?");
 
 /***/ }),
 
@@ -46,7 +46,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extr
   \*************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _legalide_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./legalide.scss */ \"./src/legalide.scss\");\n\r\n\r\nconst burgerMenu = document.querySelector('.header__nav-burger')\r\nconst nav = document.querySelector('.header__nav')\r\nconst menu = document.querySelector('ul.header__nav-list')\r\nconst width = document.body.clientWidth\r\n\r\nif(width < 867 && burgerMenu){\r\n    burgerMenu.addEventListener('click', (()=>{\r\n        console.log(menu.style.display)\r\n        if(!menu.classList.contains('hidden-menu')){\r\n        menu.classList.toggle('hidden-menu');\r\n        nav.style.marginBottom = '0'\r\n        } else {\r\n            menu.classList.toggle('hidden-menu');\r\n        nav.style.marginBottom = '460px'\r\n        }\r\n        }))\r\n}\r\n\n\n//# sourceURL=webpack:///./src/legalide.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _legalide_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./legalide.scss */ \"./src/legalide.scss\");\n\r\n\r\nconst burgerMenu = document.querySelector('.header__nav-burger')\r\nconst nav = document.querySelector('.header__nav')\r\nconst menu = document.querySelector('ul.header__nav-list')\r\n\r\n\r\nlet isActive = false;\r\nconst menuAppearance = () => {\r\n    if(document.body.clientWidth < 867){\r\n    if(!menu.classList.contains('hidden-menu')){\r\n        menu.classList.toggle('hidden-menu');\r\n        nav.style.marginBottom = '0'\r\n        } else {\r\n            menu.classList.toggle('hidden-menu');\r\n        nav.style.marginBottom = '460px'\r\n        }\r\n    }\r\n        \r\n}\r\nif(burgerMenu){\r\n    burgerMenu.addEventListener('click', menuAppearance)\r\n    isActive = true;\r\n} else {\r\n    if(isActive){\r\n        burgerMenu.removeEventListener('click', menuAppearance);\r\n        isActive = false;\r\n    }\r\n}\r\n\n\n//# sourceURL=webpack:///./src/legalide.js?");
 
 /***/ })
 
@@ -120,7 +120,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _leg
 /******/ 	
 /******/ 	/* webpack/runtime/getFullHash */
 /******/ 	(() => {
-/******/ 		__webpack_require__.h = () => ("879c6bdc3c9170b9f511")
+/******/ 		__webpack_require__.h = () => ("ca0a91f7e4220dd304ae")
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/global */

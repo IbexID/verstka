@@ -10,7 +10,6 @@
 
 html,
 body {
-  overflow-x: hidden;
   width: 100%;
   max-width: 100%;
 }
@@ -36,7 +35,7 @@ img {
   align-items: center;
   justify-content: space-between;
   height: 104px;
-  transition: all 0.2s;
+  transition: margin-bottom 0.2s;
 }
 .header__nav-logo {
   padding-left: 136px;
@@ -62,7 +61,7 @@ img {
   -webkit-transition: visibility 0.2s linear, opacity 0.2s linear;
   -moz-transition: visibility 0.2s linear, opacity 0.2s linear;
   -o-transition: visibility 0.2s linear, opacity 0.2s linear;
-  transition: all 0.2s linear;
+  transition: visibility 0.2s linear, opacity 0.2s linear;
   display: flex;
   justify-content: space-between;
   font-family: "Open Sans", sans-serif;
@@ -157,17 +156,17 @@ img {
 @media (max-width: 868px) {
   .header {
     background-image: none;
+    position: relative;
   }
   .header__nav {
     margin-bottom: 460px;
-    position: relative;
   }
   .header__nav-content {
     flex-wrap: wrap;
   }
   .header__nav-list {
     position: absolute;
-    left: 50%;
+    left: 53%;
     top: 140px;
     transform: translate(-50%);
     flex-direction: column;
@@ -935,7 +934,8 @@ img {
   border: 1px solid #E6E6E6;
   outline: none;
   position: absolute;
-  right: 53px;
+  color: white;
+  right: 118px;
   cursor: pointer;
 }
 .clients__subscribe-button:hover {
@@ -952,7 +952,11 @@ img {
     margin-left: 50px;
   }
   .clients__subscribe-input {
-    width: 250px;
+    width: 350px;
+    right: 50px;
+  }
+  .clients__subscribe-button {
+    right: 50px;
   }
 }
 @media (max-width: 886px) {
@@ -965,6 +969,8 @@ img {
     height: 1028px;
   }
   .clients__logos img {
+    height: auto !important;
+    object-fit: cover;
     min-width: 148px;
     margin: 50px 0 60px;
   }
