@@ -37,7 +37,7 @@ img {
         transition: margin-bottom 0.2s;
     }
 
-    &__nav-logo {
+    &__nav-logo a{
         padding-left: 136px;
         margin-bottom: 2px;
         @include h3-text;
@@ -66,6 +66,7 @@ img {
         @include second-text;
         margin-right: 55px;
         width: 240px;
+        margin-bottom: 2px;
     }
 
     &__nav-link:not(:nth-of-type(-1)) {
@@ -78,8 +79,11 @@ img {
 
     &__nav-icon {
         cursor: pointer;
-        margin-left: 21px;
-
+        margin: 0 -2px 2px 22px;
+        &:first-of-type{
+            margin-right: 0;
+        margin-left: 22px;
+        }
         &:hover {
             opacity: 0.6;
         }
@@ -100,7 +104,7 @@ img {
         min-height: 681px;
         background-image: url('../images/header-content-bg.png');
         background-repeat: no-repeat;
-        background-position: right 11rem bottom;
+        background-position: right 10.5rem bottom;
     }
 
     &__content {
@@ -115,7 +119,7 @@ img {
 
     &__subtitle {
         @include h4-text;
-        margin-bottom: 35px;
+        margin-bottom: 34px;
     }
 
     &__buttons {
@@ -309,10 +313,11 @@ img {
 
     &--contacts {
         background: transparent;
-        padding: 10px 20px;
+        padding: 0px 20px;
         color: rgba(208, 161, 68, 1);
         border: 1px solid #D0A144;
         border-radius: 5px;
+        height: 44px;
     }
 }
 
@@ -544,7 +549,6 @@ img {
 
     &__cards {
         display: flex;
-
     }
 
     &__card {
@@ -559,7 +563,9 @@ img {
         box-shadow: 0px 13px 19px 0px rgba(0, 0, 0, 0.12);
         margin-right: 30px;
         border-radius: 5px;
-
+        &:last-of-type{
+            margin-right: -2px;
+        }
         &:hover {
             transform: scale(1.1);
             transition: all 0.3s ease;
@@ -572,7 +578,7 @@ img {
     }
 
     &__card-image {
-        margin-bottom: 15px;
+        margin-bottom: 11px;
     }
 
     &__card--active {
@@ -589,7 +595,7 @@ img {
         }
 
         .areas__card-image {
-            margin-bottom: 10px;
+            margin-bottom: 11px;
         }
     }
 }
@@ -622,7 +628,7 @@ img {
 
 .advice {
     background-color: #FAFAFA;
-    padding: 80px 195px;
+    padding: 80px 195px 80px 197px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -645,21 +651,22 @@ img {
         display: flex;
         justify-content: space-between;
         align-items: center;
-
     }
 
     &__card {
         cursor: pointer;
-        width: 238px;
+        width: 230px;
         height: 317px;
         background: rgba(255, 255, 255, 1);
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
-        margin-right: 30px;
+        margin-right: 40px;
         border-radius: 5px;
-
+        &:last-of-type{
+            margin-right: 0;
+        }
         &:hover {
             transform: scale(1.1);
             transition: all 0.3s ease;
@@ -678,10 +685,12 @@ img {
 
     &__card-text {
         @include ordinary-text();
+        
+        padding-right: 10px;
     }
 
     &__card-image {
-        width: 100%;
+        width: 230px;
     }
 }
 
@@ -723,25 +732,27 @@ img {
     &__title {
         @include h2-text();
         margin-bottom: 15px;
+        text-align: center;
     }
 
     &__subtext {
-        margin-bottom: 100px;
+        margin-bottom: 68px;
         @include ordinary-text();
         max-width: 468px;
         text-align: center;
     }
 
     &__content {
+        margin-left: -5px;
         display: flex;
         justify-content: space-between;
         align-items: center;
     }
 
     &__image {
-        margin-right: 121px;
+        margin-right: 122px;
         position: relative;
-
+        margin-bottom: 8px;
         &::before {
             position: absolute;
             top: 50%;
@@ -770,17 +781,21 @@ img {
 
     &__info {
 
+        padding: 20px 0 ;
+        margin-right: 4px;
         max-width: 321px;
     }
 
     &__info-title {
-        margin-top: 20px;
+        margin-top: 40px;
         @include h2-text();
         margin-bottom: 10px;
     }
 
     &__info-text {
         @include second-text();
+        width: 306px;
+        line-height: 20px;
         margin-bottom: 30px;
         padding-bottom: 20px;
         padding-right: 15px;
@@ -867,13 +882,14 @@ img {
     justify-content: space-between;
 
     &__logos {
+        padding: 0 25px;
         display: flex;
-        justify-content: center;
+        justify-content: space-between;
         align-items: center;
-        margin-top: 58px;
+        margin: 49px auto 0;
 
         img {
-            margin-right: 30px;
+            
         }
 
         :nth-child(1) {
@@ -902,7 +918,6 @@ img {
     }
 
     &__bottom {
-        margin-top: auto;
         height: 77px;
         background: #252B42;
         position: relative;
@@ -911,7 +926,7 @@ img {
     &__subscribe {
         position: absolute;
         left: 50%;
-        bottom: 50%;
+        bottom: 20px;
         transform: translate(-50%, 0);
     }
 
@@ -922,7 +937,7 @@ img {
         border-radius: 2px;
         display: flex;
         margin: 0 auto;
-        padding: 30px 50px;
+        padding: 30px 52px;
         position: relative;
     }
 
@@ -942,9 +957,12 @@ img {
         outline: none;
         padding: 15px 0 15px 20px;
         @include second-text();
+        font-family: 'Montserrat';
+        line-height: 28px;
         font-weight: 400;
         position: absolute;
-        right: 118px;
+        right: 51px;
+        bottom: 33px;
 
         &:hover {
             background: #f9f9f9e1;
@@ -959,14 +977,15 @@ img {
         font-size: 14px;
         line-height: 28px;
         text-align: center;
-        padding: 15px 22.5px;
+        padding: 14px 22.5px;
         border-radius: 0px 5px 5px 0px;
         background: #D0A144;
         border: 1px solid #E6E6E6;
         outline: none;
         position: absolute;
         color:white;
-        right: 118px;
+        right: 51px;
+        bottom: 33px;
         cursor: pointer;
 
         &:hover {
@@ -974,9 +993,17 @@ img {
         }
     }
 }
-
+@media (min-width:1141px){
+    .clients__logos{
+        
+        min-width: 1050px;
+    }
+}
 @media (max-width:1140px) {
     .clients {
+        &__logos{
+            width: 800px;
+        }
         &__subscribe-form {
             width: 786px;
         }
@@ -1005,6 +1032,7 @@ img {
             flex-direction: column;
             margin-top: 0;
             height: 1028px;
+            width: auto;
 
             img {
                 height: auto !important;
@@ -1018,6 +1046,7 @@ img {
             background-color: transparent;
             margin-bottom: 230px;
             width: 100%;
+            height: 217px;
         }
 
         &__subscribe {
@@ -1045,7 +1074,8 @@ img {
         }
 
         &__subscribe-button {
-            right: 20%;
+            right: 50%;
+            transform: translate(150%);
             bottom: 30px;
         }
     }
@@ -1088,7 +1118,9 @@ img {
         background-color: rgba(37, 43, 66, 1);
         padding: 80px 40px;
         height: 393px;
-
+        img{
+            padding-right: 15px;
+        }
         .contacts__card-address,
         .contacts__card-text {
             color: white;
@@ -1097,6 +1129,7 @@ img {
 
     &__card-address {
         @include h6-text();
+        font-weight: 700;
         color: $text-color;
 
         &:first-of-type {
@@ -1107,7 +1140,7 @@ img {
 
     &__card-text {
         @include h5-text();
-        margin: 15px 0;
+        margin: 15px 0 14px;
         color: $text-color;
     }
 }

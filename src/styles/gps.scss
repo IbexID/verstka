@@ -62,15 +62,19 @@ input {
 .header {
     display: flex;
     align-items: center;
-    justify-content: space-between;
     padding: 20px 160px;
 
     &__logo {
         position: relative;
         width: 209px;
-        margin-right: 92px;
-
+        margin-right: 90px;
+        white-space: nowrap;
+        .logo__title{
+        margin-bottom: -12px;
+        margin-top: -6px;
+        }
         .logo__text {
+            margin-left: 1px;
             -webkit-text-stroke: 1px #000000;
             -o-text-stroke: 1px #000000;
             -moz-text-stroke: 1px #000000;
@@ -81,14 +85,19 @@ input {
             content: '';
             width: 2px;
             height: 80px;
-            top: 50%;
+            top: calc(50% + 5px);
             transform: translateY(-50%);
             border-radius: 100%;
             right: -45px;
             background-color: rgba(59, 57, 60, 1);
         }
     }
-
+    &__content{
+        display: flex;
+        margin-top: 14px;
+        width: 100%;
+        white-space: nowrap;
+    }
     &__title {
         text-transform: uppercase;
         font-family: 'Montserrat';
@@ -96,6 +105,8 @@ input {
         font-size: 24px;
         line-height: 30px;
         color: rgba(36, 23, 61, 1);
+        margin-right: 373px;
+        
     }
 
     &__contacts {
@@ -107,6 +118,7 @@ input {
         font-size: 24px;
         line-height: 29px;
         color: rgba(36, 23, 61, 1);
+        margin-top: 2px;
 
         &:hover {
             opacity: 0.8;
@@ -125,6 +137,9 @@ input {
         padding: 12.5px 45.5px;
         background-color: rgba(255, 198, 51, 1);
         border-radius: 30px;
+        height: 50px;
+        margin-top: 4px;
+        margin-left: 50px;
 
         &:hover {
             opacity: 0.8;
@@ -175,10 +190,9 @@ input {
     &__content {
 
         font-family: 'Montserrat', sans-serif;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
         color: white;
+        margin-left: 1px;
+        margin-top: 1px;
     }
 
     &__content-title {
@@ -186,6 +200,7 @@ input {
         font-size: 67px;
         line-height: 70px;
         text-transform: uppercase;
+        margin-bottom: 15px;
     }
 
     &__content-text {
@@ -193,7 +208,7 @@ input {
         font-size: 29px;
         line-height: 70px;
         text-transform: uppercase;
-        margin-bottom: 62px;
+        padding-bottom: 62px;
         position: relative;
 
         &::before {
@@ -220,7 +235,7 @@ input {
     &__content-subtext {
         font-size: 24px;
         line-height: 33px;
-        margin-bottom: 10px;
+        margin-bottom: 8px;
     }
 
     &__content-subtext--yellow {
@@ -247,10 +262,12 @@ input {
         background-color: rgba(255, 198, 51, 1);
         border-radius: 30px;
         text-align: center;
+        margin-left: 61px;
     }
 
     &__form-info {
         margin-bottom: 30px;
+        margin-left: 9px;
     }
 
     &__form-title {
@@ -260,6 +277,7 @@ input {
         line-height: 106px;
         text-transform: uppercase;
         letter-spacing: 0.1em;
+        margin-bottom: -11px;
     }
 
     &__form-text {
@@ -269,6 +287,8 @@ input {
         line-height: 42px;
         text-transform: uppercase;
         margin-bottom: 10px;
+        letter-spacing: .1em;
+        margin-right: 5px;
     }
 
     &__form-subtext {
@@ -278,6 +298,7 @@ input {
         line-height: 24px;
         letter-spacing: 0.1em;
         text-transform: uppercase;
+        margin-right: 5px;
     }
 
     &__form-inputs {
@@ -295,6 +316,7 @@ input {
 
     &__form-button {
         font-family: 'Montserrat', sans-serif;
+        text-transform: uppercase;
         font-weight: 600;
         font-size: 18px;
         line-height: 22px;
@@ -315,7 +337,7 @@ input {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding: 110px 70px 44px;
+    padding: 109px 62px 44px;
     position: relative;
 
     &__title {
@@ -330,7 +352,7 @@ input {
     }
 
     &__grid {
-        padding: 90px;
+        padding: 85px;
         display: grid;
         gap: 93px;
         grid-template: 1fr 1fr / 1fr 1fr 1fr;
@@ -352,7 +374,22 @@ input {
 
     &__item {
         display: flex;
-        align-items: center;
+        align-items: flex-start;
+        height: 80px;
+        &:nth-of-type(2),
+        &:nth-of-type(5){
+            margin-left: -25px;
+        }
+        &:nth-of-type(3),
+        &:nth-of-type(6){
+            margin-left: -49px;
+            
+        }
+        &:nth-of-type(6) p{
+            padding-top: 18px;
+            margin-left: -1px;
+            
+        }
     }
 
     &__item-image {
@@ -367,6 +404,8 @@ input {
         font-weight: 300;
         font-size: 24px;
         line-height: 29px;
+        padding-top: 12px;
+        letter-spacing: 0.05em;
     }
 }
 
@@ -374,7 +413,7 @@ input {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 128px;
+    margin-bottom: 126px;
 
     &__title {
         font-family: 'Montserrat';
@@ -414,19 +453,32 @@ input {
     }
 
     &__card:nth-of-type(2) {
+        width: 643px;
         grid-column: 3 / span 2;
+        .realty__card-info{
+            left: 193px;
+        }
     }
 
     &__card:nth-of-type(3) {
         grid-column: 5 / span 2;
+        .realty__card-info{
+            left: 191px;
+        }
     }
 
     &__card:nth-of-type(4) {
         grid-column: 1 / span 3;
+        .realty__card-info{
+            left: 345px;
+        }
     }
 
     &__card:nth-of-type(5) {
         grid-column: 4 / span 3;
+        .realty__card-info{
+            left: 352px;
+        }
     }
 
     &__card-image {
@@ -442,8 +494,7 @@ input {
         flex-direction: column;
         align-items: center;
         bottom: 30px;
-        left: 50%;
-        transform: translate(-50%);
+        left: 183px;
     }
 
     &__card-title {
@@ -457,6 +508,8 @@ input {
     }
 
     &__card-button {
+        font-family: 'Montserrat';
+        width: 258px;
         outline: none;
         padding: 13px 50px;
         color: rgba(36, 23, 61, 1);
@@ -477,12 +530,13 @@ input {
 
 
 .invest {
-    padding: 0 12px 88px 183px;
+    padding: 0 4px 88px 183px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 
     &__title {
+        margin-left: -8px;
         font-family: 'Montserrat';
         font-weight: 900;
         font-size: 44px;
@@ -498,17 +552,16 @@ input {
             height: 263px;
             background-color: #24173D;
             left: -35px;
-            top: 50%;
+            top: calc(50% - 2px);
             transform: translateY(-50%);
         }
     }
 
     &__card {
-        padding: 50px 160px 50px 50px;
+        padding: 50px 157px 50px 50px;
         background: #FFC633;
         border-radius: 30px 0px 0px 30px;
         display: flex;
-        justify-content: space-between;
         min-width: 950px;
     }
 
@@ -516,6 +569,34 @@ input {
         display: flex;
         flex-direction: column;
         align-items: center;
+        &:nth-child(1) {
+            margin-right: 116px;
+            .invest__card-prefix{
+                margin: 0 4px;
+            }
+        }
+        &:nth-child(2){
+            margin-right: 114px;
+            .invest__card-text:nth-child(3){
+                margin-top: 11px;
+            }
+        }
+        &:nth-child(3) {
+
+        .invest__card-percent{
+            margin: 24px 2px 25px 7px;
+            
+        }
+        .invest__card-text:nth-child(3){
+            margin-top: 11px;
+        }
+
+        .invest__card-percent::before,
+        .invest__card-percent::after{
+            width: 194px;
+            left: -6px;
+        }
+    }
     }
 
     &__card-col:not(:last-child) {
@@ -528,7 +609,7 @@ input {
             height: 146px;
             background-color: white;
             opacity: 0.2;
-            right: -65px;
+            right: -59px;
             top: 50%;
             transform: translateY(-50%);
         }
@@ -545,7 +626,7 @@ input {
     }
 
     &__card-percent {
-        margin: 20px 0;
+        margin: 24px 3px 25px 0px;
         font-family: 'Montserrat';
         font-weight: 800;
         font-size: 70px;
@@ -561,12 +642,12 @@ input {
             height: 2px;
             width: 158px;
             left: 0;
-            top: 0;
+            top: -4px;
         }
 
         &::after {
             top: auto;
-            bottom: 0;
+            bottom: -4px;
         }
     }
 
@@ -612,6 +693,9 @@ input {
     }
     &__input{
         margin-right: 20px;
+        height: 57px;
+        font-weight: 400;
+        font-size: 14px;
     }
 
     &__button {
@@ -637,16 +721,23 @@ input {
 
     &__logo {
         width: 206px;
-        margin: 70px auto 40px;
+        margin: 50px auto 41px;
+        white-space: nowrap;
+        .logo__title{
+            margin-bottom: -12px;
+        }
     }
 
     &__copyright {
         text-align: center;
         font-family: 'Century Gothic';
         font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
         background-color: rgba(230, 229, 234, 0.15);
         color: $text-color;
         padding: 15px 0;
+        margin-left: 2px;
     }
 
     &__copyright-link {

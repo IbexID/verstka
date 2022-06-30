@@ -37,17 +37,17 @@ img {
   height: 104px;
   transition: margin-bottom 0.2s;
 }
-.header__nav-logo {
+.header__nav-logo a {
   padding-left: 136px;
   margin-bottom: 2px;
-  font-family: "Martin", serif;
+  font-family: "Martel", serif;
   font-weight: 700;
-  font-size: 26px;
+  font-size: 24px;
   line-height: 32px;
   color: #252B42;
-  letter-spacing: 1px;
+  letter-spacing: 0.1px;
 }
-.header__nav-logo::hover {
+.header__nav-logo a::hover {
   opacity: 0.8;
 }
 .header__nav-content {
@@ -72,6 +72,7 @@ img {
   color: #737373;
   margin-right: 55px;
   width: 240px;
+  margin-bottom: 2px;
 }
 .header__nav-link:not(:nth-of-type(-1)) {
   margin-right: 26px;
@@ -81,7 +82,11 @@ img {
 }
 .header__nav-icon {
   cursor: pointer;
-  margin-left: 21px;
+  margin: 0 -2px 2px 22px;
+}
+.header__nav-icon:first-of-type {
+  margin-right: 0;
+  margin-left: 22px;
 }
 .header__nav-icon:hover {
   opacity: 0.6;
@@ -99,7 +104,7 @@ img {
   min-height: 681px;
   background-image: url(../images/header-content-bg.png);
   background-repeat: no-repeat;
-  background-position: right 11rem bottom;
+  background-position: right 10.5rem bottom;
 }
 .header__content {
   width: 100%;
@@ -119,7 +124,7 @@ img {
   font-size: 20px;
   line-height: 30px;
   letter-spacing: 0.2px;
-  margin-bottom: 35px;
+  margin-bottom: 34px;
 }
 .header__buttons {
   display: flex;
@@ -294,10 +299,11 @@ img {
 }
 .button--contacts {
   background: transparent;
-  padding: 10px 20px;
+  padding: 0px 20px;
   color: rgb(208, 161, 68);
   border: 1px solid #D0A144;
   border-radius: 5px;
+  height: 44px;
 }
 
 .footer__container {
@@ -309,12 +315,12 @@ img {
   padding: 42px 107px 42px 0;
 }
 .footer__consult-title {
-  font-family: "Martin", serif;
+  font-family: "Martel", serif;
   font-weight: 700;
-  font-size: 26px;
+  font-size: 24px;
   line-height: 32px;
   color: #252B42;
-  letter-spacing: 1px;
+  letter-spacing: 0.1px;
   margin-bottom: 10px;
 }
 .footer__consult-text {
@@ -468,12 +474,12 @@ img {
     margin-bottom: 50px;
   }
   .footer__consult-title {
-    font-family: "Martin", serif;
+    font-family: "Martel", serif;
     font-weight: 700;
-    font-size: 26px;
+    font-size: 24px;
     line-height: 32px;
     color: #252B42;
-    letter-spacing: 1px;
+    letter-spacing: 0.1px;
   }
   .footer__consult-button {
     width: 236px;
@@ -539,6 +545,9 @@ img {
   margin-right: 30px;
   border-radius: 5px;
 }
+.areas__card:last-of-type {
+  margin-right: -2px;
+}
 .areas__card:hover {
   transform: scale(1.1);
   transition: all 0.3s ease;
@@ -553,7 +562,7 @@ img {
   color: #252B42;
 }
 .areas__card-image {
-  margin-bottom: 15px;
+  margin-bottom: 11px;
 }
 .areas__card--active {
   box-shadow: none;
@@ -566,7 +575,7 @@ img {
   color: white;
 }
 .areas__card--active .areas__card-image {
-  margin-bottom: 10px;
+  margin-bottom: 11px;
 }
 
 @media (max-width: 1140px) {
@@ -592,7 +601,7 @@ img {
 }
 .advice {
   background-color: #FAFAFA;
-  padding: 80px 195px;
+  padding: 80px 195px 80px 197px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -625,15 +634,18 @@ img {
 }
 .advice__card {
   cursor: pointer;
-  width: 238px;
+  width: 230px;
   height: 317px;
   background: rgb(255, 255, 255);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  margin-right: 30px;
+  margin-right: 40px;
   border-radius: 5px;
+}
+.advice__card:last-of-type {
+  margin-right: 0;
 }
 .advice__card:hover {
   transform: scale(1.1);
@@ -659,9 +671,10 @@ img {
   line-height: 20px;
   letter-spacing: 0.2px;
   color: #737373;
+  padding-right: 10px;
 }
 .advice__card-image {
-  width: 100%;
+  width: 230px;
 }
 
 @media (max-width: 1140px) {
@@ -698,9 +711,10 @@ img {
   line-height: 50px;
   letter-spacing: 0.2px;
   margin-bottom: 15px;
+  text-align: center;
 }
 .about__subtext {
-  margin-bottom: 100px;
+  margin-bottom: 68px;
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
   font-size: 14px;
@@ -711,13 +725,15 @@ img {
   text-align: center;
 }
 .about__content {
+  margin-left: -5px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 .about__image {
-  margin-right: 121px;
+  margin-right: 122px;
   position: relative;
+  margin-bottom: 8px;
 }
 .about__image::before {
   position: absolute;
@@ -741,10 +757,12 @@ img {
   background: linear-gradient(rgba(0, 0, 0, 0), rgba(56, 56, 56, 0.84));
 }
 .about__info {
+  padding: 20px 0;
+  margin-right: 4px;
   max-width: 321px;
 }
 .about__info-title {
-  margin-top: 20px;
+  margin-top: 40px;
   font-family: "Martel", serif;
   font-weight: 700;
   font-size: 40px;
@@ -759,6 +777,8 @@ img {
   line-height: 24px;
   letter-spacing: 0.2px;
   color: #737373;
+  width: 306px;
+  line-height: 20px;
   margin-bottom: 30px;
   padding-bottom: 20px;
   padding-right: 15px;
@@ -840,13 +860,11 @@ img {
   justify-content: space-between;
 }
 .clients__logos {
+  padding: 0 25px;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  margin-top: 58px;
-}
-.clients__logos img {
-  margin-right: 30px;
+  margin: 49px auto 0;
 }
 .clients__logos :nth-child(1) {
   height: 34px;
@@ -867,7 +885,6 @@ img {
   height: 72px;
 }
 .clients__bottom {
-  margin-top: auto;
   height: 77px;
   background: #252B42;
   position: relative;
@@ -875,7 +892,7 @@ img {
 .clients__subscribe {
   position: absolute;
   left: 50%;
-  bottom: 50%;
+  bottom: 20px;
   transform: translate(-50%, 0);
 }
 .clients__subscribe-form {
@@ -885,16 +902,16 @@ img {
   border-radius: 2px;
   display: flex;
   margin: 0 auto;
-  padding: 30px 50px;
+  padding: 30px 52px;
   position: relative;
 }
 .clients__subscribe-label {
-  font-family: "Martin", serif;
+  font-family: "Martel", serif;
   font-weight: 700;
-  font-size: 26px;
+  font-size: 24px;
   line-height: 32px;
   color: #252B42;
-  letter-spacing: 1px;
+  letter-spacing: 0.1px;
   color: white;
   width: 253px;
   margin-right: 180px;
@@ -913,9 +930,12 @@ img {
   line-height: 24px;
   letter-spacing: 0.2px;
   color: #737373;
+  font-family: "Montserrat";
+  line-height: 28px;
   font-weight: 400;
   position: absolute;
-  right: 118px;
+  right: 51px;
+  bottom: 33px;
 }
 .clients__subscribe-input:hover {
   background: rgba(249, 249, 249, 0.8823529412);
@@ -928,21 +948,30 @@ img {
   font-size: 14px;
   line-height: 28px;
   text-align: center;
-  padding: 15px 22.5px;
+  padding: 14px 22.5px;
   border-radius: 0px 5px 5px 0px;
   background: #D0A144;
   border: 1px solid #E6E6E6;
   outline: none;
   position: absolute;
   color: white;
-  right: 118px;
+  right: 51px;
+  bottom: 33px;
   cursor: pointer;
 }
 .clients__subscribe-button:hover {
   opacity: 0.8;
 }
 
+@media (min-width: 1141px) {
+  .clients__logos {
+    min-width: 1050px;
+  }
+}
 @media (max-width: 1140px) {
+  .clients__logos {
+    width: 800px;
+  }
   .clients__subscribe-form {
     width: 786px;
   }
@@ -967,6 +996,7 @@ img {
     flex-direction: column;
     margin-top: 0;
     height: 1028px;
+    width: auto;
   }
   .clients__logos img {
     height: auto !important;
@@ -978,6 +1008,7 @@ img {
     background-color: transparent;
     margin-bottom: 230px;
     width: 100%;
+    height: 217px;
   }
   .clients__subscribe {
     bottom: -230px;
@@ -1000,7 +1031,8 @@ img {
     transform: translate(50%);
   }
   .clients__subscribe-button {
-    right: 20%;
+    right: 50%;
+    transform: translate(150%);
     bottom: 30px;
   }
 }
@@ -1047,6 +1079,9 @@ img {
   padding: 80px 40px;
   height: 393px;
 }
+.contacts__card--active img {
+  padding-right: 15px;
+}
 .contacts__card--active .contacts__card-address,
 .contacts__card--active .contacts__card-text {
   color: white;
@@ -1058,6 +1093,7 @@ img {
   line-height: 24px;
   letter-spacing: 0.2px;
   color: white;
+  font-weight: 700;
   color: #252B42;
 }
 .contacts__card-address:first-of-type {
@@ -1070,7 +1106,7 @@ img {
   line-height: 24px;
   letter-spacing: 0.1px;
   color: white;
-  margin: 15px 0;
+  margin: 15px 0 14px;
   color: #252B42;
 }
 
