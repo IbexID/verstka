@@ -217,7 +217,7 @@ input {
             height: 2px;
             width: 462px;
             background-color: white;
-            bottom: -30px;
+            bottom: 30px;
             left: 50%;
             transform: translate(-50%);
             border-radius: 100%;
@@ -716,7 +716,6 @@ input {
 
 
 .footer {
-    height: 254px;
     background-color: white;
 
     &__logo {

@@ -149,7 +149,9 @@ img {
         &__nav-logo {
             padding-left: 50px;
         }
-
+        &__nav-logo a{
+            padding-left: 0px;
+        }
         &__subtitle {
             white-space: normal;
             max-width: 320px;
@@ -887,10 +889,6 @@ img {
         justify-content: space-between;
         align-items: center;
         margin: 49px auto 0;
-
-        img {
-            
-        }
 
         :nth-child(1) {
             height: 34px;
