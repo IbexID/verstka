@@ -148,6 +148,9 @@ img {
   .header__nav-logo {
     padding-left: 50px;
   }
+  .header__nav-logo a {
+    padding-left: 0px;
+  }
   .header__subtitle {
     white-space: normal;
     max-width: 320px;
